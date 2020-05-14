@@ -2,11 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58a30f3d-0a91-41b2-a568-bb1a416104cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/XRSettings.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ForwardRenderer.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ForwardRenderer.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightweightRenderPipelineAsset.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/LightweightRenderPipelineAsset.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/MapText.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/MapText.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/branch.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/branch.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/branch.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/branch.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/bush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bush.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/fence.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/fence.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/fencetext.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/fencetext.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/grass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/grass.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/grass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/grass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/metal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/redmetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/redmetal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/tree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/whitemetal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/whitemetal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/whitemetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/whitemetal.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Editor/JetBrains/JetBrains.Rider.Unity.Editor.Plugin.Repacked.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/treefinal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/treefinal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,26 +39,39 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@5.7.2/Shaders/Lit.shader">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="165">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" selection-start-line="7" selection-end-line="7" />
               <folding>
-                <marker date="1559764906000" expanded="true" signature="41:8197" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="62:2240" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="2260:8087" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="2270:2580" ph="/* Lightweight Pipeline tag is required. If Lightweight render pipeline is not set in the graphics settings ... */" />
-                <marker date="1559764906000" expanded="true" signature="2712:2862" ph="/* ------------------------------------------------------------------ ... */" />
-                <marker date="1559764906000" expanded="true" signature="2884:5315" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="2898:3087" ph="/* Lightmode matches the ShaderPassName set in LightweightRenderPipeline.cs. SRPDefaultUnlit and passes with ... */" />
-                <marker date="1559764906000" expanded="true" signature="3288:5298" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="5338:6245" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="5515:6228" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="6268:7163" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="6438:7146" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="7271:8080" ph="{...}" />
-                <marker date="1559764906000" expanded="true" signature="7385:8063" ph="{...}" />
+                <marker date="1589491280522" expanded="true" signature="6:92" ph="..." />
+                <marker date="1589491280522" expanded="true" signature="133:138" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+              <folding>
+                <marker date="1589491329681" expanded="true" signature="6:32" ph="..." />
+                <marker date="1589491329681" expanded="true" signature="125:519" ph="{...}" />
+                <marker date="1589491329681" expanded="true" signature="263:360" ph="{...}" />
+                <marker date="1589491329681" expanded="true" signature="392:517" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -46,11 +83,21 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@5.7.2/Shaders/Lit.shader" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="613" />
-    <option name="y" value="120" />
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1380" />
+    <option name="y" value="95" />
     <option name="width" value="1280" />
     <option name="height" value="1200" />
   </component>
@@ -60,21 +107,41 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
-      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="8711f2a6:AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="e068e287:UnityExplorerRootNode" />
+              <item name="Packages" type="4e2708dd:PackagesRoot" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="FileSystemExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -90,6 +157,22 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="userSelectedPid" value="false" />
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -101,11 +184,13 @@
       <option name="presentableId" value="Default" />
       <updated>1589476299989</updated>
       <workItem from="1589476305608" duration="31000" />
+      <workItem from="1589488477280" duration="12000" />
+      <workItem from="1589489178221" duration="1343000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31000" />
+    <option name="totallyTimeSpent" value="1386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -117,19 +202,12 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="613" y="120" width="1280" height="1200" extended-state="0" />
+    <frame x="-1928" y="94" width="1936" height="1216" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16782099" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -137,19 +215,28 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" order="15" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -161,24 +248,34 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@5.7.2/Shaders/Lit.shader">
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.lightweight@5.7.2/Shaders/Lit.shader" />
+    <entry file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="165">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
           <folding>
-            <marker date="1559764906000" expanded="true" signature="41:8197" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="62:2240" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="2260:8087" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="2270:2580" ph="/* Lightweight Pipeline tag is required. If Lightweight render pipeline is not set in the graphics settings ... */" />
-            <marker date="1559764906000" expanded="true" signature="2712:2862" ph="/* ------------------------------------------------------------------ ... */" />
-            <marker date="1559764906000" expanded="true" signature="2884:5315" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="2898:3087" ph="/* Lightmode matches the ShaderPassName set in LightweightRenderPipeline.cs. SRPDefaultUnlit and passes with ... */" />
-            <marker date="1559764906000" expanded="true" signature="3288:5298" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="5338:6245" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="5515:6228" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="6268:7163" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="6438:7146" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="7271:8080" ph="{...}" />
-            <marker date="1559764906000" expanded="true" signature="7385:8063" ph="{...}" />
+            <marker date="1589491280522" expanded="true" signature="6:92" ph="..." />
+            <marker date="1589491280522" expanded="true" signature="133:138" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
+          <folding>
+            <marker date="1589491329681" expanded="true" signature="6:32" ph="..." />
+            <marker date="1589491329681" expanded="true" signature="125:519" ph="{...}" />
+            <marker date="1589491329681" expanded="true" signature="263:360" ph="{...}" />
+            <marker date="1589491329681" expanded="true" signature="392:517" ph="{...}" />
           </folding>
         </state>
       </provider>
