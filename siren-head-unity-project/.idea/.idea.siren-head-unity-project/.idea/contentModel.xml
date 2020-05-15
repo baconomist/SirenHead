@@ -18,7 +18,6 @@
           <e p="FPSController.cs" t="Include" />
           <e p="GameCamera.cs" t="Include" />
           <e p="GameInput.cs" t="Include" />
-          <e p="NoiseTextureGenerator.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />

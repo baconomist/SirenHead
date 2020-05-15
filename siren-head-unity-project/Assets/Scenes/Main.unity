@@ -22998,7 +22998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 475318081}
   m_LocalRotation: {x: -0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -0, y: 1.69, z: 1.25}
+  m_LocalPosition: {x: -0, y: 0.61, z: 1.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1951535674}
@@ -92695,7 +92695,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1951535671}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -485.1, y: 13.03, z: 29.3}
+  m_LocalPosition: {x: -429.1, y: 13.03, z: 29.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 475318085}
@@ -92757,6 +92757,68 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cdabd5b7ce974cfb91c2da489d0857a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprintSpeed: 20
+  movementSpeed: 10
+  stepBounceMultiplier: 4
+  stepBounceCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.5
+      value: 1
+      inSlope: -0.14834498
+      outSlope: -0.14834498
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.19930685
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: -4.6903567
+      outSlope: -4.6903567
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.18173754
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stepMovementCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.9954778
+      inSlope: -0.2896104
+      outSlope: -0.2896104
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.6871302
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  stepLength: 1
+  linkStepsToMovement: 0
   xRotSensitivity: 3
 --- !u!1001 &1955285353
 PrefabInstance:

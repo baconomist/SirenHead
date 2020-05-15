@@ -7,13 +7,13 @@ public static class GameInput
         return Input.GetAxis("Horizontal");
     }
 
-    public static bool GetLeft()
+    public static float GetForward()
     {
-        return Input.GetKey("A");
+        return Input.GetAxis("Vertical");
     }
 
-    public static bool GetRight()
+    public static bool IsSprinting()
     {
-        return Input.GetKey("D");
+        return Input.GetKey(KeyCode.LeftShift);
     }
 }
