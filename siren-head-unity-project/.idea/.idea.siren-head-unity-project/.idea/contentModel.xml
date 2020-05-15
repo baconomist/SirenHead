@@ -5,7 +5,6 @@
     <e p="C:\Users\Lucas\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Lucas\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_siren-head-unity-project.-369019552.00" t="ExcludeRecursive" />
     <e p="C:\Users\Lucas\Desktop\Projects\SirenHead\siren-head-unity-project" t="IncludeRecursive">
-      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Day-Night Skyboxes" t="Include">
@@ -14,24 +13,11 @@
             <e p="Readme for Assigning.txt" t="Include" />
           </e>
         </e>
-        <e p="Glitch" t="Include">
-          <e p="AnalogGlitch.cs" t="Include" />
-          <e p="DigitalGlitch.cs" t="Include" />
-          <e p="Editor" t="Include">
-            <e p="AnalogGlitchEditor.cs" t="Include" />
-            <e p="DigitalGlitchEditor.cs" t="Include" />
-          </e>
-          <e p="Shader" t="Include">
-            <e p="AnalogGlitch.shader" t="Include" />
-            <e p="DigitalGlitch.shader" t="Include" />
-          </e>
-        </e>
         <e p="Scripts" t="Include">
           <e p="DistanceCullingObject.cs" t="Include" />
           <e p="FPSController.cs" t="Include" />
           <e p="GameCamera.cs" t="Include" />
           <e p="GameInput.cs" t="Include" />
-          <e p="Test.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
