@@ -12,7 +12,7 @@ Material:
   m_ShaderKeywords: _ALPHATEST_ON
   m_LightmapFlags: 6
   m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
+  m_DoubleSidedGI: 1
   m_CustomRenderQueue: 3050
   stringTagMap:
     RenderType: Transparent
@@ -58,7 +58,7 @@ Material:
     - _CameraFarFadeDistance: 2
     - _CameraNearFadeDistance: 1
     - _ColorMode: 0
-    - _Cull: 2
+    - _Cull: 0
     - _Cutoff: 0.142
     - _DistortionBlend: 0.5
     - _DistortionEnabled: 0
@@ -87,7 +87,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 0
     m_Colors:
-    - _BaseColor: {r: 0.122641504, g: 0.122641504, b: 0.122641504, a: 0.5882353}
+    - _BaseColor: {r: 0.2830189, g: 0.2830189, b: 0.2830189, a: 0.5882353}
     - _BaseColorAddSubDiff: {r: -1, g: 0, b: 0, a: 0}
     - _CameraFadeParams: {r: 0, g: Infinity, b: 0, a: 0}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
