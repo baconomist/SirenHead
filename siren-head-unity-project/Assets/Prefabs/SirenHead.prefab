@@ -113,7 +113,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3831569675199133540
 Transform:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ AudioSource:
   MinDistance: 1
   MaxDistance: 29.143875
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -177,23 +177,32 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.034312528
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.28130367
+      outSlope: -0.28130367
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0.7442332
+    - serializedVersion: 3
+      time: 0.54305136
+      value: 0.5584259
+      inSlope: -0.9853456
+      outSlope: -0.9853456
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.18513967
+      outWeight: 0
     - serializedVersion: 3
       time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
+      value: 0.034312528
+      inSlope: -0.03432622
+      outSlope: -0.03432622
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -202,7 +211,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.481
+      value: 0.729
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -262,10 +271,10 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1.2266026
-  MaxDistance: 20.13498
+  MinDistance: 5
+  MaxDistance: 300
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 1
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -298,7 +307,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0.542
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -348,7 +357,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
+  m_Speed: 11.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -384,7 +393,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3831569675199133539}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 5, y: 32, z: 7}
@@ -497,6 +506,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: 6edb244a8acd10b48b020512f34fe551, type: 2}
+    - target: {fileID: 865810624614184485, guid: afb2e6a5a5e6c2047864851c5c3002e6,
+        type: 3}
+      propertyPath: m_TagString
+      value: SirenHeadHand
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afb2e6a5a5e6c2047864851c5c3002e6, type: 3}
 --- !u!1 &5047854893778720301 stripped
