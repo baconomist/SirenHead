@@ -1,5 +1,33 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!65 &1678176496226782245
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163393584195478357}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.416634, y: 19.296167, z: 15.5118475}
+  m_Center: {x: -13.159957, y: -9.594426, z: 4.161189}
+--- !u!111 &1670278390598394374
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163393584195478357}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 57f9d85cc6c4c8846be1d9189e6d34d2, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &1027195658620554073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12,7 +40,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6de033af3c4f56bd6d25da437846a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableInEditor: 0
   cullDistance: 300
+--- !u!114 &6678383200958332418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163393584195478357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f488df9b6bf90a64fa1c1e67ec437487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7135066696305343068
 PrefabInstance:
   m_ObjectHideFlags: 0

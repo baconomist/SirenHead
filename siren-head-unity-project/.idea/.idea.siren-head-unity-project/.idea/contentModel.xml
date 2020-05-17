@@ -5,6 +5,7 @@
     <e p="C:\Users\Lucas\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Lucas\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_siren-head-unity-project.-369019552.00" t="ExcludeRecursive" />
     <e p="C:\Users\Lucas\Desktop\Projects\SirenHead\siren-head-unity-project" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Day-Night Skyboxes" t="Include">
@@ -13,13 +14,43 @@
             <e p="Readme for Assigning.txt" t="Include" />
           </e>
         </e>
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshAssetManager.cs" t="Include" />
+            <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshComponents.asmdef" t="Include" />
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
         <e p="Scripts" t="Include">
+          <e p="AIGrid.cs" t="Include" />
           <e p="DistanceCullingObject.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="AIGridEditor.cs" t="Include" />
+            <e p="NoiseGeneratorEditor.cs" t="Include" />
+          </e>
           <e p="FPSController.cs" t="Include" />
           <e p="GameCamera.cs" t="Include" />
           <e p="GameInput.cs" t="Include" />
+          <e p="NoiseGenerator.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="SirenHead.cs" t="Include" />
+          <e p="SirenHeadAnimEventReceiver.cs" t="Include" />
+          <e p="Tree.cs" t="Include" />
         </e>
       </e>
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="siren-head-unity-project.sln" t="IncludeFlat" />
