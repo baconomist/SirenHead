@@ -4,17 +4,24 @@ using Vector3 = UnityEngine.Vector3;
 
 public class SirenHead : MonoBehaviour
 {
-    public float movementSpeed = 10f;
+    public const float DefaultMovementSpeed = 10f;
+    
+    public float movementSpeedMultiplier = 1f;
     public float sirenDistance = 200f;
     public float lightBlinkDelay = 1f;
 
     public bool isFollowingPlayer = true;
+    public int playerDetectionDistance = 200;
+    public MeshFilter mapPlane;
 
     private Light _light;
     private AudioSource _sirenAudio;
     private AudioSource _footstepAudio;
     private NavMeshAgent _navMeshAgent;
     private Animator _animator;
+    private NoiseGenerator _noiseGenerator;
+
+    private bool _navDestSet = false;
     
     private Player _player;
     private float _lightTimer = 0;
@@ -28,6 +35,11 @@ public class SirenHead : MonoBehaviour
         _footstepAudio = GetComponents<AudioSource>()[1];
         _navMeshAgent = GetComponent<NavMeshAgent>();
         _animator = GetComponentInChildren<Animator>();
+        _noiseGenerator = gameObject.AddComponent<NoiseGenerator>();
+        _noiseGenerator.width = 100;
+        _noiseGenerator.height = 100;
+        _noiseGenerator.scale = 100;
+        _noiseGenerator.offset = new Vector2(Random.Range(0, 10000), Random.Range(0, 10000));
 
         _player = FindObjectOfType<Player>();
 
@@ -43,13 +55,34 @@ public class SirenHead : MonoBehaviour
 
     private void Update()
     {
+        _navMeshAgent.speed = movementSpeedMultiplier * DefaultMovementSpeed;
+        _animator.speed = movementSpeedMultiplier;
+        
+        isFollowingPlayer = Vector3.Distance(_player.transform.position, transform.position) < playerDetectionDistance;
         if(isFollowingPlayer)
             FollowPlayer();
         else
         {
             // Teleport somewhere, and then after some time or important event, teleport near the player randomly
-            // As soon as out of player's sight, do stuff here and maybe right away appear behind the player ;) 
+            // As soon as out of player's sight, do stuff here and maybe right away appear behind the player ;)
+            if (!_navDestSet || Vector3.Distance(_navMeshAgent.destination, transform.position) < 100)
+            {
+                float x = Mathf.Lerp(
+                    mapPlane.transform.position.x - mapPlane.mesh.bounds.extents.x * Mathf.Abs(mapPlane.transform.localScale.x),
+                    mapPlane.transform.position.x + mapPlane.mesh.bounds.extents.x * Mathf.Abs(mapPlane.transform.localScale.x),
+                    _noiseGenerator.GetNoiseAt(new Vector2(0, 0)));
+                float z = Mathf.Lerp(
+                    mapPlane.transform.position.z - mapPlane.mesh.bounds.extents.z * Mathf.Abs(mapPlane.transform.localScale.z),
+                    mapPlane.transform.position.z + mapPlane.mesh.bounds.extents.z * Mathf.Abs(mapPlane.transform.localScale.z),
+                    _noiseGenerator.GetNoiseAt(new Vector2(50, 50)));
+
+                _navMeshAgent.SetDestination(new Vector3(x, 0, z));
+
+                _navDestSet = true;
+            }
         }
+
+        _noiseGenerator.offset.x += Time.deltaTime;
     }
 
     private void FollowPlayer()
@@ -71,7 +104,7 @@ public class SirenHead : MonoBehaviour
 
             _lightTimer = 0;
         }
-
+        
         _lightTimer += Time.deltaTime;
     }
     
@@ -86,6 +119,7 @@ public class SirenHead : MonoBehaviour
             other.gameObject.transform.LookAt(transform);
             _animator.SetTrigger("Eat");
             Destroy(GetComponent<BoxCollider>());
+            Destroy(_navMeshAgent);
         }
     }
 

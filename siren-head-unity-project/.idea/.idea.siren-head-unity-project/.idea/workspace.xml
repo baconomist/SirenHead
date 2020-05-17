@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58a30f3d-0a91-41b2-a568-bb1a416104cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Tree.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../raw-assets/sirenhead/SirenHead.blend" beforeDir="false" afterPath="$PROJECT_DIR$/../raw-assets/sirenhead/SirenHead.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../raw-assets/sirenhead/SirenHead.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/../raw-assets/sirenhead/SirenHead.blend1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/SirenHead.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/SirenHead.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/SirenHead.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/SirenHead.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/treefinal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/treefinal.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Grass/GrassMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Grass/GrassMat.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/bush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bush.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/SirenHead.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/SirenHead.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh-map.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/NavMesh-map.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SirenHeadTesting.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SirenHeadTesting.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,23 +49,75 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHead.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="644">
-              <caret line="83" column="93" selection-start-line="83" selection-start-column="93" selection-end-line="83" selection-end-column="93" />
+            <state relative-caret-position="419">
+              <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
               <folding>
-                <marker date="1589734230243" expanded="false" signature="6:77" ph="..." />
-                <marker date="1589734230243" expanded="true" signature="117:2945" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="548:1023" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="1058:1101" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="1128:1458" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="1205:1452" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="1228:1442" ph="/* Teleport somewhere, and then after some time or important event, teleport near the player randomly ... */" />
-                <marker date="1589734230243" expanded="true" signature="1491:2187" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="1507:1713" ph="/* transform.position += transform.forward * movementSpeed * Time.deltaTime; ... */" />
-                <marker date="1589734230243" expanded="true" signature="1825:2141" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="2240:2788" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="2307:2782" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="2819:2873" ph="{...}" />
-                <marker date="1589734230243" expanded="true" signature="2903:2943" ph="{...}" />
+                <marker date="1589740755654" expanded="false" signature="6:77" ph="..." />
+                <marker date="1589740755654" expanded="true" signature="117:4870" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="774:1524" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="1559:1602" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="1629:3236" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="1964:3177" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="1987:2200" ph="/* Teleport somewhere, and then after some time or important event, teleport near the player randomly ... */" />
+                <marker date="1589740755654" expanded="true" signature="2303:3167" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="3269:3973" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="3285:3491" ph="/* transform.position += transform.forward * movementSpeed * Time.deltaTime; ... */" />
+                <marker date="1589740755654" expanded="true" signature="3603:3919" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="4026:4713" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="4093:4707" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="4744:4798" ph="{...}" />
+                <marker date="1589740755654" expanded="true" signature="4828:4868" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameInput.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
+              <folding>
+                <marker date="1589502208000" expanded="true" signature="49:344" ph="{...}" />
+                <marker date="1589502208000" expanded="true" signature="96:152" ph="{...}" />
+                <marker date="1589502208000" expanded="true" signature="190:244" ph="{...}" />
+                <marker date="1589502208000" expanded="true" signature="282:342" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+              <folding>
+                <marker date="1589740728199" expanded="true" signature="63:1306" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="218:282" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="332:448" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="489:787" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="599:755" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="653:745" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="845:1304" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="944:1130" ph="{...}" />
+                <marker date="1589740728199" expanded="true" signature="998:1120" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+              <folding>
+                <marker date="1589739215599" expanded="false" signature="6:64" ph="..." />
+                <marker date="1589739215599" expanded="true" signature="147:852" ph="{...}" />
+                <marker date="1589739215599" expanded="true" signature="191:850" ph="{...}" />
+                <marker date="1589739215599" expanded="true" signature="430:843" ph="{...}" />
+                <marker date="1589739215599" expanded="true" signature="646:833" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -76,7 +126,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="90">
               <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <marker date="1589733177139" expanded="true" signature="7:33" ph="..." />
@@ -90,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="75">
               <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
                 <marker date="1589731133123" expanded="true" signature="6:92" ph="..." />
@@ -112,18 +162,20 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@7.3.1/Editor/Drawing/MaterialGraphEditWindow.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.3.1/Runtime/RendererFeatures/RenderObjects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIGrid.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@7.3.1/Runtime/RendererFeatures/RenderObjects.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@7.3.1/Editor/Drawing/MaterialGraphEditWindow.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -136,13 +188,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Test.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Editor/AIGridEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" />
       </list>
     </option>
@@ -159,37 +211,12 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="FileSystemExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
-        <subPane>
-          <expand>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="NavMeshComponents" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="NavMeshComponents" type="1045f7f1:UnityExplorerNode" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="8711f2a6:AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
@@ -203,6 +230,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -250,12 +278,13 @@
       <workItem from="1589641883437" duration="17000" />
       <workItem from="1589641936243" duration="13467000" />
       <workItem from="1589728730697" duration="1947000" />
-      <workItem from="1589730863896" duration="3078000" />
+      <workItem from="1589730863896" duration="6000000" />
+      <workItem from="1589739938050" duration="811000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32348000" />
+    <option name="totallyTimeSpent" value="36081000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -270,7 +299,7 @@
     <frame x="-1928" y="94" width="1936" height="1216" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17634523" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17794353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -364,19 +393,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameInput.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
-          <folding>
-            <marker date="1589502208000" expanded="true" signature="49:344" ph="{...}" />
-            <marker date="1589502208000" expanded="true" signature="96:152" ph="{...}" />
-            <marker date="1589502208000" expanded="true" signature="190:244" ph="{...}" />
-            <marker date="1589502208000" expanded="true" signature="282:342" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
@@ -393,10 +409,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/AIGridEditor.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/SirenHeadAnimEventReceiver.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NavMeshComponents/Scripts/SirenHeadAnimEventReceiver.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/NoiseTexture.png" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIGrid.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -407,29 +423,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/NavMeshComponents/Scripts/SirenHeadAnimEventReceiver.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameInput.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+        <state relative-caret-position="180">
+          <caret line="16" column="47" selection-start-line="16" selection-start-column="47" selection-end-line="16" selection-end-column="47" />
           <folding>
-            <marker date="1589731133123" expanded="true" signature="6:92" ph="..." />
-            <marker date="1589731133123" expanded="true" signature="149:296" ph="{...}" />
-            <marker date="1589731133123" expanded="true" signature="252:294" ph="{...}" />
+            <marker date="1589502208000" expanded="true" signature="49:344" ph="{...}" />
+            <marker date="1589502208000" expanded="true" signature="96:152" ph="{...}" />
+            <marker date="1589502208000" expanded="true" signature="190:244" ph="{...}" />
+            <marker date="1589502208000" expanded="true" signature="282:342" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="90">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <marker date="1589733177139" expanded="true" signature="7:33" ph="..." />
             <marker date="1589733177139" expanded="true" signature="68:242" ph="{...}" />
             <marker date="1589733177139" expanded="true" signature="118:240" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+          <folding>
+            <marker date="1589731133123" expanded="true" signature="6:92" ph="..." />
+            <marker date="1589731133123" expanded="true" signature="149:296" ph="{...}" />
+            <marker date="1589731133123" expanded="true" signature="252:294" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -445,25 +471,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="2" column="26" lean-forward="true" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+          <folding>
+            <marker date="1589739215599" expanded="false" signature="6:64" ph="..." />
+            <marker date="1589739215599" expanded="true" signature="147:852" ph="{...}" />
+            <marker date="1589739215599" expanded="true" signature="191:850" ph="{...}" />
+            <marker date="1589739215599" expanded="true" signature="430:843" ph="{...}" />
+            <marker date="1589739215599" expanded="true" signature="646:833" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <marker date="1589740728199" expanded="true" signature="63:1306" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="218:282" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="332:448" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="489:787" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="599:755" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="653:745" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="845:1304" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="944:1130" ph="{...}" />
+            <marker date="1589740728199" expanded="true" signature="998:1120" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHead.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="83" column="93" selection-start-line="83" selection-start-column="93" selection-end-line="83" selection-end-column="93" />
+        <state relative-caret-position="419">
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="64" selection-end-line="41" selection-end-column="64" />
           <folding>
-            <marker date="1589734230243" expanded="false" signature="6:77" ph="..." />
-            <marker date="1589734230243" expanded="true" signature="117:2945" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="548:1023" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="1058:1101" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="1128:1458" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="1205:1452" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="1228:1442" ph="/* Teleport somewhere, and then after some time or important event, teleport near the player randomly ... */" />
-            <marker date="1589734230243" expanded="true" signature="1491:2187" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="1507:1713" ph="/* transform.position += transform.forward * movementSpeed * Time.deltaTime; ... */" />
-            <marker date="1589734230243" expanded="true" signature="1825:2141" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="2240:2788" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="2307:2782" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="2819:2873" ph="{...}" />
-            <marker date="1589734230243" expanded="true" signature="2903:2943" ph="{...}" />
+            <marker date="1589740755654" expanded="false" signature="6:77" ph="..." />
+            <marker date="1589740755654" expanded="true" signature="117:4870" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="774:1524" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="1559:1602" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="1629:3236" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="1964:3177" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="1987:2200" ph="/* Teleport somewhere, and then after some time or important event, teleport near the player randomly ... */" />
+            <marker date="1589740755654" expanded="true" signature="2303:3167" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="3269:3973" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="3285:3491" ph="/* transform.position += transform.forward * movementSpeed * Time.deltaTime; ... */" />
+            <marker date="1589740755654" expanded="true" signature="3603:3919" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="4026:4713" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="4093:4707" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="4744:4798" ph="{...}" />
+            <marker date="1589740755654" expanded="true" signature="4828:4868" ph="{...}" />
           </folding>
         </state>
       </provider>

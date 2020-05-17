@@ -2,13 +2,18 @@ using UnityEngine;
 
 public class NoiseGenerator : MonoBehaviour
 {
-    public int width, height = 100;
+    public int width = 100, height = 100;
     public Vector2 offset = new Vector2(0, 0);
-    public float scale = 1;
+    public float scale = 30;
 
     public Texture2D GetTexture()
     {
         return GenerateTexture(GenerateNoiseMap());
+    }
+
+    public float GetNoiseAt(Vector2 samplePoint)
+    {
+        return Mathf.PerlinNoise( samplePoint.x / scale + offset.x,  samplePoint.y / scale + offset.y);
     }
 
     private float[,] GenerateNoiseMap()
@@ -19,7 +24,7 @@ public class NoiseGenerator : MonoBehaviour
         {
             for (int x = 0; x < width; x++)
             {
-                noiseMap[x, y] = Mathf.PerlinNoise( x / scale + offset.x,  y / scale + offset.y);
+                noiseMap[x, y] = GetNoiseAt(new Vector2(x, y));
             }
         }
 
