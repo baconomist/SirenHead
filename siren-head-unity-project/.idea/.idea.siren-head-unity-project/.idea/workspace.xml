@@ -2,13 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58a30f3d-0a91-41b2-a568-bb1a416104cc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PickupableObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PickupableObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHead.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="179">
@@ -75,6 +71,22 @@
                 <marker date="1589824190431" expanded="true" signature="5842:6605" ph="{...}" />
                 <marker date="1589824190431" expanded="true" signature="5909:6599" ph="{...}" />
                 <marker date="1589824190431" expanded="true" signature="6636:6690" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+              <folding>
+                <marker date="1589825124585" expanded="true" signature="6:101" ph="..." />
+                <marker date="1589825124585" expanded="true" signature="143:1029" ph="{...}" />
+                <marker date="1589825124585" expanded="true" signature="263:1027" ph="{...}" />
+                <marker date="1589825124585" expanded="true" signature="535:788" ph="{...}" />
+                <marker date="1589825124585" expanded="true" signature="825:1021" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -133,26 +145,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-              <folding>
-                <marker date="1589740728199" expanded="true" signature="63:1306" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="218:282" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="332:448" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="489:787" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="599:755" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="653:745" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="845:1304" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="944:1130" ph="{...}" />
-                <marker date="1589740728199" expanded="true" signature="998:1120" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="30">
@@ -171,7 +163,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="30">
               <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
               <folding>
                 <marker date="1589733177139" expanded="true" signature="7:33" ph="..." />
@@ -185,7 +177,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="45">
               <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
               <folding>
                 <marker date="1589731133123" expanded="true" signature="6:92" ph="..." />
@@ -214,6 +206,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSController.cs" root0="FORCE_HIGHLIGHTING" />
@@ -249,6 +242,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" />
       </list>
     </option>
   </component>
@@ -347,12 +341,12 @@
       <workItem from="1589728730697" duration="1947000" />
       <workItem from="1589730863896" duration="6000000" />
       <workItem from="1589739938050" duration="4350000" />
-      <workItem from="1589816053519" duration="7345000" />
+      <workItem from="1589816053519" duration="8276000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46965000" />
+    <option name="totallyTimeSpent" value="47896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -512,7 +506,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="30">
           <caret line="9" column="45" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
           <folding>
             <marker date="1589733177139" expanded="true" signature="7:33" ph="..." />
@@ -524,7 +518,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="45">
           <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding>
             <marker date="1589731133123" expanded="true" signature="6:92" ph="..." />
@@ -659,6 +653,20 @@
             <marker date="1589824190431" expanded="true" signature="5842:6605" ph="{...}" />
             <marker date="1589824190431" expanded="true" signature="5909:6599" ph="{...}" />
             <marker date="1589824190431" expanded="true" signature="6636:6690" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
+          <folding>
+            <marker date="1589825124585" expanded="true" signature="6:101" ph="..." />
+            <marker date="1589825124585" expanded="true" signature="143:1029" ph="{...}" />
+            <marker date="1589825124585" expanded="true" signature="263:1027" ph="{...}" />
+            <marker date="1589825124585" expanded="true" signature="535:788" ph="{...}" />
+            <marker date="1589825124585" expanded="true" signature="825:1021" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -43,6 +43,7 @@
           <e p="GameCamera.cs" t="Include" />
           <e p="GameInput.cs" t="Include" />
           <e p="InfoText.cs" t="Include" />
+          <e p="ItemSpawner.cs" t="Include" />
           <e p="NoiseGenerator.cs" t="Include" />
           <e p="PickupableObject.cs" t="Include" />
           <e p="Player.cs" t="Include" />
