@@ -4,7 +4,12 @@ public static class GameInput
 {
     public static float GetCameraRotationX()
     {
-        return Input.GetAxis("Horizontal");
+        return Input.GetAxis("Mouse X");
+    }
+    
+    public static float GetCameraRotationY()
+    {
+        return -Input.GetAxis("Mouse Y");
     }
 
     public static float GetForward()

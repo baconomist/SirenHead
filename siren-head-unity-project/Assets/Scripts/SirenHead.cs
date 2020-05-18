@@ -1,21 +1,34 @@
-﻿using UnityEngine;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.Rendering;
 using UnityEngine.Rendering.Universal;
+using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
+
+[Serializable]
+public struct SirenAudio
+{
+    public AudioClip AudioClip;
+    public int MinTriggerDistance;
+}
 
 public class SirenHead : MonoBehaviour
 {
+    public const float LightBlinkTime = 1f;
     public const float DefaultMovementSpeed = 10f;
 
     public float movementSpeedMultiplier = 1f;
     public float sirenDistance = 200f;
-    public float lightBlinkDelay = 1f;
     public bool enableRandomMovementSpeeds = true;
 
     public bool isFollowingPlayer = true;
     public int playerDetectionDistance = 200;
     public MeshFilter mapPlane;
+
+    public List<SirenAudio> sirenAudios = new List<SirenAudio>();
 
     private Light _light;
     private AudioSource _sirenAudio;
@@ -28,7 +41,6 @@ public class SirenHead : MonoBehaviour
     private bool _navDestSet = false;
 
     private Player _player;
-    private float _lightTimer = 0;
 
     private void Start()
     {
@@ -54,9 +66,9 @@ public class SirenHead : MonoBehaviour
 
         _player = FindObjectOfType<Player>();
 
-        _lightTimer = lightBlinkDelay;
-
         SirenHeadAnimEventReceiver.OnFootstep += OnFootstep;
+
+        sirenAudios.Sort((x, y) => x.MinTriggerDistance.CompareTo(y.MinTriggerDistance));
     }
 
     private void OnFootstep()
@@ -75,65 +87,85 @@ public class SirenHead : MonoBehaviour
             isFollowingPlayer = Vector3.Distance(_player.transform.position, transform.position) <
                                 playerDetectionDistance;
 
+            // DON"T reset if was following player and now isn't, that way sirenhead goes to last known player pos
             if (!wasFollowingPlayer && isFollowingPlayer)
                 _navMeshAgent.ResetPath();
 
             if (isFollowingPlayer)
-                FollowPlayer();
+                OnFollowPlayer();
             else
-            {
-                // Teleport somewhere, and then after some time or important event, teleport near the player randomly
-                // As soon as out of player's sight, do stuff here and maybe right away appear behind the player ;)
-                if (!_navDestSet || Vector3.Distance(_navMeshAgent.destination, transform.position) < 100)
-                {
-                    float x = Mathf.Lerp(
-                        mapPlane.transform.position.x -
-                        mapPlane.mesh.bounds.extents.x * Mathf.Abs(mapPlane.transform.localScale.x),
-                        mapPlane.transform.position.x +
-                        mapPlane.mesh.bounds.extents.x * Mathf.Abs(mapPlane.transform.localScale.x),
-                        _posNoiseGen.GetNoiseAt(new Vector2(0, 0)));
-                    float z = Mathf.Lerp(
-                        mapPlane.transform.position.z -
-                        mapPlane.mesh.bounds.extents.z * Mathf.Abs(mapPlane.transform.localScale.z),
-                        mapPlane.transform.position.z +
-                        mapPlane.mesh.bounds.extents.z * Mathf.Abs(mapPlane.transform.localScale.z),
-                        _posNoiseGen.GetNoiseAt(new Vector2(50, 50)));
-
-                    _navMeshAgent.SetDestination(new Vector3(x, 0, z));
-
-                    if (enableRandomMovementSpeeds)
-                        movementSpeedMultiplier = _speedNoiseGen.GetNoiseAt(new Vector2(0, 0)) * 10;
-
-                    _navDestSet = true;
-                }
-            }
+                OnAmbientMovement();
 
             _posNoiseGen.offset.x += Time.deltaTime;
             _speedNoiseGen.offset.x += Time.deltaTime;
         }
+
+
+        // Manage siren audio based on distance from player
+        AudioClip audioClip = null;
+        foreach (SirenAudio sirenAudio in sirenAudios)
+        {
+            if (sirenAudio.MinTriggerDistance > Vector3.Distance(transform.position, _player.transform.position))
+            {
+                audioClip = sirenAudio.AudioClip;
+                break;
+            }
+        }
+
+        if (_sirenAudio.clip != audioClip)
+        {
+            _sirenAudio.clip = audioClip;
+        }
+
+        if (!_sirenAudio.isPlaying && _sirenAudio.clip != null)
+        {
+            BlinkLight();
+            // Make sure light gets turned off
+            Invoke("BlinkLight", LightBlinkTime);
+            _sirenAudio.Play();
+        }
     }
 
-    private void FollowPlayer()
+    private void OnFollowPlayer()
     {
 //        transform.position += transform.forward * movementSpeed * Time.deltaTime;
 //        transform.LookAt(new Vector3(_player.transform.position.x, transform.position.y, _player.transform.position.z));
 
+        // Slow down siren head to give player a chance to escape
+        movementSpeedMultiplier = 1;
+
         _player.StartShake();
         _navMeshAgent.SetDestination(_player.transform.position);
+    }
 
-        if (_lightTimer >= lightBlinkDelay)
+    private void OnAmbientMovement()
+    {
+        _player.StopShake();
+
+        // Teleport somewhere, and then after some time or important event, teleport near the player randomly
+        // As soon as out of player's sight, do stuff here and maybe right away appear behind the player ;)
+        if (!_navDestSet || Vector3.Distance(_navMeshAgent.destination, transform.position) < 100)
         {
-            BlinkLight();
-            // Make sure light gets turned off
-            Invoke("BlinkLight", lightBlinkDelay / 2f);
+            float x = Mathf.Lerp(
+                mapPlane.transform.position.x -
+                mapPlane.mesh.bounds.extents.x * Mathf.Abs(mapPlane.transform.localScale.x),
+                mapPlane.transform.position.x +
+                mapPlane.mesh.bounds.extents.x * Mathf.Abs(mapPlane.transform.localScale.x),
+                _posNoiseGen.GetNoiseAt(new Vector2(0, 0)));
+            float z = Mathf.Lerp(
+                mapPlane.transform.position.z -
+                mapPlane.mesh.bounds.extents.z * Mathf.Abs(mapPlane.transform.localScale.z),
+                mapPlane.transform.position.z +
+                mapPlane.mesh.bounds.extents.z * Mathf.Abs(mapPlane.transform.localScale.z),
+                _posNoiseGen.GetNoiseAt(new Vector2(50, 50)));
 
-            if (Vector3.Distance(transform.position, _player.transform.position) < sirenDistance)
-                PlaySiren();
+            _navMeshAgent.SetDestination(new Vector3(x, 0, z));
 
-            _lightTimer = 0;
+            if (enableRandomMovementSpeeds)
+                movementSpeedMultiplier = _speedNoiseGen.GetNoiseAt(new Vector2(0, 0)) * 10;
+
+            _navDestSet = true;
         }
-
-        _lightTimer += Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -155,10 +187,5 @@ public class SirenHead : MonoBehaviour
     private void BlinkLight()
     {
         _light.enabled = !_light.enabled;
-    }
-
-    private void PlaySiren()
-    {
-        _sirenAudio.Play();
     }
 }

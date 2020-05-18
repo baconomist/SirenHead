@@ -10,6 +10,9 @@ public class FPSController : MonoBehaviour
     public float stepLength = 1f;
     public bool linkStepsToMovement = false;
     public float xRotSensitivity = 1f;
+    public float yRotSensitivity = 1f;
+
+    public Camera camera;
 
     public bool enabled = true;
 
@@ -26,13 +29,14 @@ public class FPSController : MonoBehaviour
         if (enabled)
         {
             transform.Rotate(Vector3.up, GameInput.GetCameraRotationX() * xRotSensitivity);
+            camera.transform.Rotate(Vector3.right, GameInput.GetCameraRotationY() * yRotSensitivity);
 
-            if (GameInput.GetForward() > 0.5f)
+            if (Mathf.Abs(GameInput.GetForward()) > 0.5f)
             {
                 float stepPercent = Mathf.InverseLerp(0, stepLength, _stepTimer);
                 float curveDerivative =
                     (stepBounceCurve.Evaluate(stepPercent + 0.01f) - stepBounceCurve.Evaluate(stepPercent)) / 0.01f;
-                float moveSpeed = (GameInput.IsSprinting() ? sprintSpeed : movementSpeed);
+                float moveSpeed = (GameInput.IsSprinting() ? sprintSpeed : movementSpeed) * GameInput.GetForward();
 
                 // Make character move with step, otherwise continuous movement
                 if (linkStepsToMovement)
