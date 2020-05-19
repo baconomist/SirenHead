@@ -48,7 +48,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9000938033622586166}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -92,5 +92,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec6de033af3c4f56bd6d25da437846a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enableInEditor: 0
-  cullDistance: 300
+  enableInEditor: 1
+  cullDistance: 150

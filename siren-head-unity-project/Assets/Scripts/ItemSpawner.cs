@@ -19,7 +19,6 @@ public class ItemSpawner : MonoBehaviour
         for (int i = 0; i < 4; i++)
         {
             int spawnIndex = Random.Range(0, possibleSpawnIndicies.Count);
-            Debug.Log(spawnIndex);
             spawnPositions[i] = possibleSpawnIndicies[spawnIndex];
             possibleSpawnIndicies.RemoveAt(spawnIndex);
         }

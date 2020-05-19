@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class FPSController : MonoBehaviour
@@ -17,11 +18,14 @@ public class FPSController : MonoBehaviour
     public bool enabled = true;
 
     private float _stepTimer = -1;
-    private float stepStartY;
+    private float _stepStartY;
+    private float _prevDerivative = 0;
+
+    public static event Action OnFootstep;
 
     void Start()
     {
-        stepStartY = transform.position.y;
+        _stepStartY = transform.position.y;
     }
 
     void FixedUpdate()
@@ -53,14 +57,19 @@ public class FPSController : MonoBehaviour
                 else
                     transform.position -= stepUp;
 
+                if (_prevDerivative > 0 && curveDerivative < 0)
+                    OnFootstep();
+
                 // Restart step if finished
                 if (stepPercent >= 1)
                 {
                     _stepTimer = 0;
-                    transform.position = new Vector3(transform.position.x, stepStartY, transform.position.z);
+                    transform.position = new Vector3(transform.position.x, _stepStartY, transform.position.z);
                 }
 
-                _stepTimer += Time.deltaTime * (moveSpeed / movementSpeed);
+                _stepTimer += Time.deltaTime * (Mathf.Abs(moveSpeed) / movementSpeed);
+                
+                _prevDerivative = curveDerivative;
             }
             else
             {

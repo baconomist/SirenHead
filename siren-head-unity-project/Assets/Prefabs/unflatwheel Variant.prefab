@@ -16,19 +16,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &237258028
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5032591897719934701}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.9792753, y: 0.5360219, z: 1.979275}
-  m_Center: {x: 0.00000002980232, y: -0.00000005960463, z: -0.000000029802315}
 --- !u!114 &237258030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41,6 +28,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1226c4b7aafa88c4da460909fa028db9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!65 &5376238598469231865
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032591897719934701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.9792755, y: 0.53602195, z: 1.9792752}
+  m_Center: {x: 0.000000029802322, y: -0.000000059604638, z: -0.000000029802319}
+--- !u!65 &2931561541654445654
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5032591897719934701}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6921728, y: 1.6794634, z: 2.8425903}
+  m_Center: {x: -0.0007316015, y: 0.051766023, z: 0.060092166}
 --- !u!1001 &3960553843658610660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -121,7 +134,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 4e7e67706621a4546bd7f5938a7c3119,
         type: 3}
       propertyPath: m_Name
-      value: unflatwheel
+      value: unflatwheel Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4e7e67706621a4546bd7f5938a7c3119, type: 3}

@@ -9,17 +9,14 @@ public class DistanceCullingObject : MonoBehaviour
     public float cullDistance = 100;
 
     private MeshRenderer _meshRenderer;
-    private Camera _camera;
-    
+
     private void Start()
     {
-        _camera = Camera.main;
         _meshRenderer = GetComponent<MeshRenderer>();
     }
 
     private void OnValidate()
     {
-        _camera = Camera.main;
         _meshRenderer = GetComponent<MeshRenderer>();
         
         #if UNITY_EDITOR
@@ -39,6 +36,16 @@ public class DistanceCullingObject : MonoBehaviour
 
     void UpdateVisibility()
     {
-        _meshRenderer.enabled = Vector3.Distance(_camera.transform.position, transform.position) < cullDistance;
+        try
+        {
+            _meshRenderer.enabled = Vector3.Distance(Camera.main.transform.position, transform.position) < cullDistance;
+        }
+        catch
+        {
+            // Prevent lag in case camera is disabled
+            _meshRenderer.enabled = false;
+            // Throw an error instead
+            throw new Exception("DistanceCulling error. Could the camera be null?");
+        }
     }
 }
