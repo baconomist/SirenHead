@@ -13,8 +13,7 @@ public class Player : MonoBehaviour
     public GameObject map;
 
     public InfoText startInfoText;
-
-    private Animation _animation;
+    
     private AudioSource _voiceAudio;
     private AudioSource _footstepAudio;
     private AudioSource _mapAudio;
@@ -27,7 +26,6 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
-        _animation = GetComponentInChildren<Animation>();
         _voiceAudio = GetComponentInChildren<AudioSource>();
         
         _footstepAudio = gameObject.AddComponent<AudioSource>();
@@ -68,18 +66,6 @@ public class Player : MonoBehaviour
         {
             Destroy(infoText.gameObject);
         }
-    }
-
-    public void StartShake()
-    {
-        if (!_animation.isPlaying)
-            _animation.Play();
-    }
-
-    public void StopShake()
-    {
-        if (_animation.isPlaying)
-            _animation.Stop();
     }
 
     void PlayObjectFoundVoiceLine()

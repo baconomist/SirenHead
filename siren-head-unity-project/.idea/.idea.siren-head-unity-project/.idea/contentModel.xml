@@ -1,18 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Lucas\.Rider2019.1\config\scratches" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas\.Rider2019.1\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Lucas\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_siren-head-unity-project.-369019552.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_siren-head-unity-project.-369019552.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas\AppData\Roaming\JetBrains\Rider2020.1\scratches" t="IncludeRecursive" />
     <e p="C:\Users\Lucas\Desktop\Projects\SirenHead\siren-head-unity-project" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Ciconia Studio" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Double Sided Shaders" t="Include">
+              <e p="Double Sided Emissive Diffuse.shader" t="Include" />
+              <e p="Double Sided Standard Diffuse Bump.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump Cutout.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump.shader" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Day-Night Skyboxes" t="Include">
           <e p="Readme.txt" t="Include" />
           <e p="Textures" t="Include">
             <e p="Readme for Assigning.txt" t="Include" />
           </e>
+        </e>
+        <e p="Editor" t="Include">
+          <e p="AIGridEditor.cs" t="Include" />
+          <e p="NoiseGeneratorEditor.cs" t="Include" />
         </e>
         <e p="FingersLite" t="Include">
           <e p="ChangeLog.txt" t="Include" />
@@ -36,7 +52,60 @@
             </e>
           </e>
         </e>
-        <e p="FogFollower.cs" t="Include" />
+        <e p="FogEffect" t="Include">
+          <e p="Kino" t="Include">
+            <e p="Fog" t="Include">
+              <e p="Editor" t="Include">
+                <e p="FogEditor.cs" t="Include" />
+              </e>
+              <e p="Fog.cs" t="Include" />
+              <e p="Shader" t="Include">
+                <e p="Fog.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Standard Assets" t="Include">
+            <e p="Effects" t="Include">
+              <e p="ImageEffects" t="Include">
+                <e p="Scripts" t="Include">
+                  <e p="GlobalFog.cs" t="Include" />
+                  <e p="PostEffectsBase.cs" t="Include" />
+                </e>
+                <e p="Shaders" t="Include">
+                  <e p="GlobalFog.shader" t="Include" />
+                </e>
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="GlitchEffect" t="Include">
+          <e p="Kino" t="Include">
+            <e p="Glitch" t="Include">
+              <e p="AnalogGlitch.cs" t="Include" />
+              <e p="DigitalGlitch.cs" t="Include" />
+              <e p="Editor" t="Include">
+                <e p="AnalogGlitchEditor.cs" t="Include" />
+                <e p="DigitalGlitchEditor.cs" t="Include" />
+              </e>
+              <e p="Shader" t="Include">
+                <e p="AnalogGlitch.shader" t="Include" />
+                <e p="DigitalGlitch.shader" t="Include" />
+              </e>
+            </e>
+          </e>
+          <e p="Reaktion" t="Include">
+            <e p="Editor" t="Include">
+              <e p="Utility" t="Include">
+                <e p="ConstantMotionEditor.cs" t="Include" />
+                <e p="JitterMotionEditor.cs" t="Include" />
+              </e>
+            </e>
+            <e p="Utility" t="Include">
+              <e p="ConstantMotion.cs" t="Include" />
+              <e p="JitterMotion.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="NavMeshComponents" t="Include">
           <e p="Editor" t="Include">
             <e p="NavMeshAssetManager.cs" t="Include" />
@@ -55,15 +124,72 @@
             <e p="NavMeshSurface.cs" t="Include" />
           </e>
         </e>
+        <e p="Plugins" t="Include">
+          <e p="SimpleInput" t="Include">
+            <e p="Credits.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="AxisInputDrawer.cs" t="Include" />
+              <e p="BaseInputDrawer.cs" t="Include" />
+              <e p="ButtonInputDrawer.cs" t="Include" />
+              <e p="KeyInputDrawer.cs" t="Include" />
+              <e p="MouseButtonInputDrawer.cs" t="Include" />
+            </e>
+            <e p="Example" t="Include">
+              <e p="ExamplePlayerController.cs" t="Include" />
+            </e>
+            <e p="Readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AxisInputs" t="Include">
+                <e p="AxisInputKeyboard.cs" t="Include" />
+                <e p="AxisInputMouse.cs" t="Include" />
+                <e p="AxisInputPinchGesture.cs" t="Include" />
+                <e p="AxisInputRotateGesture.cs" t="Include" />
+                <e p="AxisInputSwipeGesture.cs" t="Include" />
+                <e p="AxisInputUI.cs" t="Include" />
+                <e p="Dpad.cs" t="Include" />
+                <e p="Joystick.cs" t="Include" />
+                <e p="SteeringWheel.cs" t="Include" />
+                <e p="Touchpad.cs" t="Include" />
+              </e>
+              <e p="ButtonInputs" t="Include">
+                <e p="ButtonInputKeyboard.cs" t="Include" />
+                <e p="ButtonInputSwipeGesture.cs" t="Include" />
+                <e p="ButtonInputUI.cs" t="Include" />
+              </e>
+              <e p="Core" t="Include">
+                <e p="BaseInput.cs" t="Include" />
+                <e p="ISimpleInputDraggable.cs" t="Include" />
+                <e p="ISimpleInputDraggableMultiTouch.cs" t="Include" />
+                <e p="NonDrawingGraphic.cs" t="Include" />
+                <e p="SelectivePointerInput.cs" t="Include" />
+                <e p="SimpleInputDragListener.cs" t="Include" />
+                <e p="SimpleInputMultiDragListener.cs" t="Include" />
+                <e p="SimpleInputUtils.cs" t="Include" />
+                <e p="SwipeGestureBase.cs" t="Include" />
+                <e p="UnityInputProvider.cs" t="Include" />
+              </e>
+              <e p="KeyInputs" t="Include">
+                <e p="KeyInputKeyboard.cs" t="Include" />
+                <e p="KeyInputSwipeGesture.cs" t="Include" />
+                <e p="KeyInputUI.cs" t="Include" />
+              </e>
+              <e p="MouseButtonInputs" t="Include">
+                <e p="MouseButtonInputKeyboard.cs" t="Include" />
+                <e p="MouseButtonInputSwipeGesture.cs" t="Include" />
+                <e p="MouseButtonInputUI.cs" t="Include" />
+              </e>
+              <e p="SimpleInput.cs" t="Include" />
+              <e p="SimpleInputHelper.cs" t="Include" />
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="AIGrid.cs" t="Include" />
           <e p="CameraFade.cs" t="Include" />
           <e p="DistanceCullingObject.cs" t="Include" />
-          <e p="Editor" t="Include">
-            <e p="AIGridEditor.cs" t="Include" />
-            <e p="NoiseGeneratorEditor.cs" t="Include" />
-          </e>
+          <e p="FogFollower.cs" t="Include" />
           <e p="FPSController.cs" t="Include" />
+          <e p="FPSDisplay.cs" t="Include" />
           <e p="GameCamera.cs" t="Include" />
           <e p="GameFinishedCollider.cs" t="Include" />
           <e p="GameInput.cs" t="Include" />

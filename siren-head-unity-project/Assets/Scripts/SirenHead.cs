@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using Kino;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.Rendering;
-using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 using Vector3 = UnityEngine.Vector3;
@@ -48,7 +47,10 @@ public class SirenHead : MonoBehaviour
     private bool _navDestSet = false;
 
     private Player _player;
+    private AnalogGlitch _playerAnalogGlitchEffect;
+    private AnalogGlitch _deathCameraAnalogGlitchEffect;
     private float _idleLightTimer = 0;
+    private bool _hasPlayer = false;
 
     private void Start()
     {
@@ -78,14 +80,17 @@ public class SirenHead : MonoBehaviour
         _noiseAudio.loop = true;
 
         _player = FindObjectOfType<Player>();
+        _playerAnalogGlitchEffect = _player.gameObject.GetComponentInChildren<AnalogGlitch>();
+        _deathCameraAnalogGlitchEffect = deathCamera.GetComponentInChildren<AnalogGlitch>();
 
         SirenHeadAnimEventReceiver.OnFootstep += OnFootstep;
         SirenHeadAnimEventReceiver.OnPlayerEaten += OnPlayerEaten;
 
         sirenAudios.Sort((x, y) => x.MinTriggerDistance.CompareTo(y.MinTriggerDistance));
-        
+
         // Whenever the player has picked up a wheel, make sirenhead go to them ;P
-        Player.OnWheelFound += delegate(Vector3 pos) { 
+        Player.OnWheelFound += delegate(Vector3 pos)
+        {
             _navMeshAgent.ResetPath();
             _navMeshAgent.SetDestination(pos);
             _navDestSet = true;
@@ -104,11 +109,20 @@ public class SirenHead : MonoBehaviour
 
     private void Update()
     {
+        if (_hasPlayer)
+        {
+            _deathCameraAnalogGlitchEffect.verticalJump =
+                Mathf.Lerp(_deathCameraAnalogGlitchEffect.verticalJump, 1f, Time.deltaTime * 100f);
+            Debug.Log(_deathCameraAnalogGlitchEffect.verticalJump);
+        }
+        
         // Enable sirenhead once player has found a wheel or sirenhead as been awakened
-        if (_player.wheelsFound > 0 || Vector3.Distance(_player.transform.position, transform.position) <= playerDetectionDistance || _navMeshAgent.hasPath)
+        if (_player.wheelsFound > 0 ||
+            Vector3.Distance(_player.transform.position, transform.position) <= playerDetectionDistance ||
+            _navMeshAgent.hasPath)
         {
             _animator.enabled = true;
-            
+
             if (_navMeshAgent != null)
             {
                 _navMeshAgent.speed = movementSpeedMultiplier * DefaultMovementSpeed;
@@ -167,7 +181,6 @@ public class SirenHead : MonoBehaviour
             }
 
             _idleLightTimer += Time.deltaTime;
-            _player.StopShake();
         }
     }
 
@@ -180,20 +193,31 @@ public class SirenHead : MonoBehaviour
         // Also, based on # of wheels player has collected, if they have a lot, they better a void sirenhead as much as possible
         // Otherwise they're dead for sure
         movementSpeedMultiplier = _player.wheelsFound + 1;
-
-        _player.StartShake();
-        _navMeshAgent.SetDestination(_player.transform.position);
         
-        if(!_noiseAudio.isPlaying)
+        _navMeshAgent.SetDestination(_player.transform.position);
+
+        if (!_noiseAudio.isPlaying)
             _noiseAudio.Play();
+
         _noiseAudio.volume = Mathf.Lerp(0, 0.15f, 1f - Mathf.InverseLerp(0, playerDetectionDistance,
-            Vector3.Distance(transform.position, _player.transform.position)));
+                                                      Vector3.Distance(transform.position,
+                                                          _player.transform.position)));
+
+        _playerAnalogGlitchEffect.scanLineJitter = Mathf.Lerp(0, 0.3f, 1f - Mathf.InverseLerp(0,
+                                                                           playerDetectionDistance,
+                                                                           Vector3.Distance(transform.position,
+                                                                               _player.transform.position)));
+        _playerAnalogGlitchEffect.colorDrift = Mathf.Lerp(0, 1f, 1f - Mathf.InverseLerp(0, playerDetectionDistance,
+                                                                       Vector3.Distance(transform.position,
+                                                                           _player.transform.position)));
+        
+        _playerAnalogGlitchEffect.horizontalShake = Mathf.Lerp(0, 1f, 1f - Mathf.InverseLerp(0, playerDetectionDistance,
+                                                                       Vector3.Distance(transform.position,
+                                                                           _player.transform.position)));
     }
 
     private void OnAmbientMovement()
     {
-        _player.StopShake();
-
         // Teleport somewhere, and then after some time or important event, teleport near the player randomly
         // As soon as out of player's sight, do stuff here and maybe right away appear behind the player ;)
         if (!_navDestSet || Vector3.Distance(_navMeshAgent.destination, transform.position) < 100)
@@ -232,6 +256,10 @@ public class SirenHead : MonoBehaviour
 //            other.gameObject.GetComponent<FPSController>().enabled = false;
 //            other.gameObject.GetComponent<Player>().StopShake();
             deathCamera.SetActive(true);
+            _deathCameraAnalogGlitchEffect.scanLineJitter = _playerAnalogGlitchEffect.scanLineJitter;
+            _deathCameraAnalogGlitchEffect.horizontalShake = _playerAnalogGlitchEffect.horizontalShake;
+            _hasPlayer = true;
+            
             other.gameObject.SetActive(false);
             _noiseAudio.Stop();
             _animator.SetTrigger("Eat");

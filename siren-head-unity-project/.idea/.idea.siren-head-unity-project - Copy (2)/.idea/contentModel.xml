@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Lucas\.Rider2019.1\config\scratches" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas\.Rider2019.1\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Lucas\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_siren-head-unity-project - Copy (2).-254980994.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Lucas\Desktop\Projects\SirenHead\siren-head-unity-project - Copy (2)" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp-firstpass.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Ciconia Studio" t="Include">
+          <e p="Shaders" t="Include">
+            <e p="Double Sided Shaders" t="Include">
+              <e p="Double Sided Emissive Diffuse.shader" t="Include" />
+              <e p="Double Sided Standard Diffuse Bump.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump Cutout.shader" t="Include" />
+              <e p="Double Sided Transparent Diffuse Bump.shader" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Day-Night Skyboxes" t="Include">
+          <e p="Readme.txt" t="Include" />
+          <e p="Textures" t="Include">
+            <e p="Readme for Assigning.txt" t="Include" />
+          </e>
+        </e>
+        <e p="FingersLite" t="Include">
+          <e p="ChangeLog.txt" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="FingersScriptEditor.cs" t="Include" />
+          </e>
+          <e p="Readme.txt" t="Include" />
+          <e p="Script" t="Include">
+            <e p="FingersScript.cs" t="Include" />
+            <e p="Gestures" t="Include">
+              <e p="DeviceInfo.cs" t="Include" />
+              <e p="GestureRecognizer.cs" t="Include" />
+              <e p="LongPressGestureRecognizer.cs" t="Include" />
+              <e p="OneTouchRotateGestureRecognizer.cs" t="Include" />
+              <e p="OneTouchScaleGestureRecognizer.cs" t="Include" />
+              <e p="PanGestureRecognizer.cs" t="Include" />
+              <e p="RotateGestureRecognizer.cs" t="Include" />
+              <e p="ScaleGestureRecognizer.cs" t="Include" />
+              <e p="SwipeGestureRecognizer.cs" t="Include" />
+              <e p="TapGestureRecognizer.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="FogFollower.cs" t="Include" />
+        <e p="NavMeshComponents" t="Include">
+          <e p="Editor" t="Include">
+            <e p="NavMeshAssetManager.cs" t="Include" />
+            <e p="NavMeshComponentsEditor.asmdef" t="Include" />
+            <e p="NavMeshComponentsGUIUtility.cs" t="Include" />
+            <e p="NavMeshLinkEditor.cs" t="Include" />
+            <e p="NavMeshModifierEditor.cs" t="Include" />
+            <e p="NavMeshModifierVolumeEditor.cs" t="Include" />
+            <e p="NavMeshSurfaceEditor.cs" t="Include" />
+          </e>
+          <e p="Scripts" t="Include">
+            <e p="NavMeshComponents.asmdef" t="Include" />
+            <e p="NavMeshLink.cs" t="Include" />
+            <e p="NavMeshModifier.cs" t="Include" />
+            <e p="NavMeshModifierVolume.cs" t="Include" />
+            <e p="NavMeshSurface.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Plugins" t="Include">
+          <e p="SimpleInput" t="Include">
+            <e p="Credits.txt" t="Include" />
+            <e p="Editor" t="Include">
+              <e p="AxisInputDrawer.cs" t="Include" />
+              <e p="BaseInputDrawer.cs" t="Include" />
+              <e p="ButtonInputDrawer.cs" t="Include" />
+              <e p="KeyInputDrawer.cs" t="Include" />
+              <e p="MouseButtonInputDrawer.cs" t="Include" />
+            </e>
+            <e p="Example" t="Include">
+              <e p="ExamplePlayerController.cs" t="Include" />
+            </e>
+            <e p="Readme.txt" t="Include" />
+            <e p="Scripts" t="Include">
+              <e p="AxisInputs" t="Include">
+                <e p="AxisInputKeyboard.cs" t="Include" />
+                <e p="AxisInputMouse.cs" t="Include" />
+                <e p="AxisInputPinchGesture.cs" t="Include" />
+                <e p="AxisInputRotateGesture.cs" t="Include" />
+                <e p="AxisInputSwipeGesture.cs" t="Include" />
+                <e p="AxisInputUI.cs" t="Include" />
+                <e p="Dpad.cs" t="Include" />
+                <e p="Joystick.cs" t="Include" />
+                <e p="SteeringWheel.cs" t="Include" />
+                <e p="Touchpad.cs" t="Include" />
+              </e>
+              <e p="ButtonInputs" t="Include">
+                <e p="ButtonInputKeyboard.cs" t="Include" />
+                <e p="ButtonInputSwipeGesture.cs" t="Include" />
+                <e p="ButtonInputUI.cs" t="Include" />
+              </e>
+              <e p="Core" t="Include">
+                <e p="BaseInput.cs" t="Include" />
+                <e p="ISimpleInputDraggable.cs" t="Include" />
+                <e p="ISimpleInputDraggableMultiTouch.cs" t="Include" />
+                <e p="NonDrawingGraphic.cs" t="Include" />
+                <e p="SelectivePointerInput.cs" t="Include" />
+                <e p="SimpleInputDragListener.cs" t="Include" />
+                <e p="SimpleInputMultiDragListener.cs" t="Include" />
+                <e p="SimpleInputUtils.cs" t="Include" />
+                <e p="SwipeGestureBase.cs" t="Include" />
+                <e p="UnityInputProvider.cs" t="Include" />
+              </e>
+              <e p="KeyInputs" t="Include">
+                <e p="KeyInputKeyboard.cs" t="Include" />
+                <e p="KeyInputSwipeGesture.cs" t="Include" />
+                <e p="KeyInputUI.cs" t="Include" />
+              </e>
+              <e p="MouseButtonInputs" t="Include">
+                <e p="MouseButtonInputKeyboard.cs" t="Include" />
+                <e p="MouseButtonInputSwipeGesture.cs" t="Include" />
+                <e p="MouseButtonInputUI.cs" t="Include" />
+              </e>
+              <e p="SimpleInput.cs" t="Include" />
+              <e p="SimpleInputHelper.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Scripts" t="Include">
+          <e p="AIGrid.cs" t="Include" />
+          <e p="CameraFade.cs" t="Include" />
+          <e p="DistanceCullingObject.cs" t="Include" />
+          <e p="Editor" t="Include">
+            <e p="AIGridEditor.cs" t="Include" />
+            <e p="NoiseGeneratorEditor.cs" t="Include" />
+          </e>
+          <e p="FPSController.cs" t="Include" />
+          <e p="FPSDisplay.cs" t="Include" />
+          <e p="GameCamera.cs" t="Include" />
+          <e p="GameFinishedCollider.cs" t="Include" />
+          <e p="GameInput.cs" t="Include" />
+          <e p="GameManager.cs" t="Include" />
+          <e p="InfoText.cs" t="Include" />
+          <e p="ItemSpawner.cs" t="Include" />
+          <e p="NoiseGenerator.cs" t="Include" />
+          <e p="PickupableObject.cs" t="Include" />
+          <e p="Player.cs" t="Include" />
+          <e p="SirenHead.cs" t="Include" />
+          <e p="SirenHeadAnimEventReceiver.cs" t="Include" />
+          <e p="Tree.cs" t="Include" />
+        </e>
+      </e>
+      <e p="NavMeshComponents.csproj" t="IncludeRecursive" />
+      <e p="NavMeshComponentsEditor.csproj" t="IncludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="siren-head-unity-project - Copy (2).sln" t="IncludeFlat" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

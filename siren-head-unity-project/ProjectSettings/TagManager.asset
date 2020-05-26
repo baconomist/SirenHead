@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SirenHeadHand
   - PlayerMap
+  - TreeToReplace
   layers:
   - Default
   - TransparentFX

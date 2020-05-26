@@ -1,44 +1,58 @@
 using System;
 using UnityEngine;
 
-
-[RequireComponent(typeof(MeshRenderer))]
+[ExecuteInEditMode]
 public class DistanceCullingObject : MonoBehaviour
 {
     public bool enableInEditor = false;
     public float cullDistance = 100;
 
     private MeshRenderer _meshRenderer;
+    private bool _showing = false;
 
     private void Start()
     {
-        _meshRenderer = GetComponent<MeshRenderer>();
+        _meshRenderer = GetComponentInChildren<MeshRenderer>();
+        _meshRenderer.enabled = _showing;
     }
 
     private void OnValidate()
     {
-        _meshRenderer = GetComponent<MeshRenderer>();
-        
-        #if UNITY_EDITOR
-            if(enableInEditor)
-                UpdateVisibility();
-            else
-            {
-                _meshRenderer.enabled = true;
-            }
-        #endif
+        _meshRenderer = GetComponentInChildren<MeshRenderer>();
+
+#if UNITY_EDITOR
+        if (enableInEditor)
+            UpdateVisibility();
+        else
+        {
+            _meshRenderer.enabled = true;
+        }
+#endif
+
+        _meshRenderer.enabled = _showing;
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         UpdateVisibility();
     }
 
     void UpdateVisibility()
     {
+        if (!Application.isPlaying && !enableInEditor)
+        {
+            _meshRenderer.enabled = true;
+            return;
+        }
+        
         try
         {
-            _meshRenderer.enabled = Vector3.Distance(Camera.main.transform.position, transform.position) < cullDistance;
+            bool shouldShow = Vector3.Distance(Camera.main.transform.position, transform.position) < cullDistance;
+            if (_showing != shouldShow)
+            {
+                _showing = shouldShow;
+                _meshRenderer.enabled = _showing;
+            }
         }
         catch
         {
