@@ -8,7 +8,7 @@ public class GameFinishedCollider : MonoBehaviour
         if (other.GetComponent<Player>() != null && other.GetComponent<Player>().wheelsFound == 4)
         {
             GameManager.OnGameFinished();
-            
+
             // Destroy self to prevent multiple events from propagating
             Destroy(gameObject);
         }

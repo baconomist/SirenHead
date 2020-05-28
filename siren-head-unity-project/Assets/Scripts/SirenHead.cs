@@ -99,7 +99,7 @@ public class SirenHead : MonoBehaviour
 
     private void OnPlayerEaten()
     {
-        GameManager.OnPlayerDied();
+        GameManager.OnGameOver();
     }
 
     private void OnFootstep()
@@ -113,7 +113,6 @@ public class SirenHead : MonoBehaviour
         {
             _deathCameraAnalogGlitchEffect.verticalJump =
                 Mathf.Lerp(_deathCameraAnalogGlitchEffect.verticalJump, 1f, Time.deltaTime * 100f);
-            Debug.Log(_deathCameraAnalogGlitchEffect.verticalJump);
         }
         
         // Enable sirenhead once player has found a wheel or sirenhead as been awakened

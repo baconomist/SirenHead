@@ -1,101 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="58a30f3d-0a91-41b2-a568-bb1a416104cc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/FPSDisplay.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../raw-assets/sirenhead/other.blend" beforeDir="false" afterPath="$PROJECT_DIR$/../raw-assets/sirenhead/other.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../raw-assets/sirenhead/other.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/../raw-assets/sirenhead/other.blend1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Ads.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fog Stuff/FogParticleMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fog Stuff/FogParticleMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FogFollower.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FogFollower.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FogFollower.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FogFollower.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Glitch.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Glitch/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Glitch/Shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Grass_Mesh.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Grass_Mesh.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Green_Grass_AlbedoA.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Green_Grass_AlbedoA.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Green_Grass_MAODS.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Green_Grass_MAODS.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Green_Grass_Normal.tga" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass Assets/Green_Grass_Normal.tga.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/Grass.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/GrassMat.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Grass/GrassMat.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GridMat.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GridMat.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/MapText.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/MapText.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials/fencetext.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Materials/fencetext.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials/jerrycan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Materials/jerrycan.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials/strap.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Materials/strap.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Materials/wood.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Materials/wood.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/PlayerMap.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/PlayerMap.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/black.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/blackmetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/blackmetal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/branch.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/branch.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/bush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bush.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/fence.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/fence.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/flesh.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/flesh.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/garagedoor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/garagedoor.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/glass.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/glass.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/grass.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/grass.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/grass.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/grass.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/jerrycan.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/jerrycan.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/metal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/metal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/powertool.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/powertool.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/redbricks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/redbricks.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/redmetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/redmetal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/skin.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/skin.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/straps.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/straps.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/tankertext.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/tankertext.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/tree.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/whitemetal.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/whitemetal.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/woodplanks.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/woodplanks.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material_002__UV1_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material_002__UV1_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material_003__UV1_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material_003__UV1_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__UV1_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__UV1_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__dark_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__dark_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__mirror_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__mirror_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__wheel2_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__wheel2_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__wheel2_png_001.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__wheel2_png_001.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__wheel_png.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/Materials/sedan-Material__wheel_png.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/bush.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/bush.fbx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Meshes/tree1.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/tree1.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Meshes/treechunk.fbx" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Meshes/treechunk.fbx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Fog Particles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Fog Particles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Grass.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/treefinal.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/treefinal.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Renderer/UniversalRenderPipelineAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Renderer/UniversalRenderPipelineAsset.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Grass.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Grass.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Bush.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Bush.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tree.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-0.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/ReflectionProbe-0.exr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/AIGridEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/AIGridEditor.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Editor/NoiseGeneratorEditor.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameFinishedCollider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameFinishedCollider.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,12 +53,18 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/NoiseGenerator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FingersLite/Script/Gestures/SwipeGestureRecognizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIGrid.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Common/DummyClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InfoText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FogEffect/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraFade.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FogFollower.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PickupableObject.cs" root0="FORCE_HIGHLIGHTING" />
@@ -124,11 +74,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FingersLite/Script/Gestures/GestureRecognizer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/SimpleInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FingersLite/Script/FingersScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GlitchEffect/Kino/Glitch/AnalogGlitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Api/BannerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Api/InterstitialAd.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FogEffect/Kino/Fog/Fog.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -150,27 +103,23 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Tree.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InfoText.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraFade.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameFinishedCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" />
         <option value="$PROJECT_DIR$/Assets/FogFollower.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSDisplay.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathCamera.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" />
         <option value="$PROJECT_DIR$/Assets/FogEffect/Kino/Fog/Fog.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameFinishedCollider.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" />
       </list>
     </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="430" />
-    <option name="y" value="193" />
-    <option name="width" value="1280" />
-    <option name="height" value="1440" />
   </component>
   <component name="ProjectId" id="1cS5PCCywhbUm24ZbUwUS9AmxLE" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -195,10 +144,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="8592">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="8592" />
       <method v="2" />
     </configuration>
   </component>
@@ -230,7 +179,10 @@
       <workItem from="1589986985758" duration="2752000" />
       <workItem from="1590504042037" duration="2333000" />
       <workItem from="1590509196776" duration="173000" />
-      <workItem from="1590509391471" duration="862000" />
+      <workItem from="1590509391471" duration="6073000" />
+      <workItem from="1590539897329" duration="3169000" />
+      <workItem from="1590591696708" duration="2151000" />
+      <workItem from="1590618389535" duration="3024000" />
     </task>
     <servers />
   </component>
@@ -239,8 +191,102 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="2517" height="534" key="GridCell.Tab.0.bottom" timestamp="1590626296269">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.0.bottom/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296269" />
+    <state width="2517" height="534" key="GridCell.Tab.0.center" timestamp="1590626296269">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.0.center/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296269" />
+    <state width="2517" height="534" key="GridCell.Tab.0.left" timestamp="1590626296269">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.0.left/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296269" />
+    <state width="2517" height="534" key="GridCell.Tab.0.right" timestamp="1590626296269">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.0.right/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296269" />
+    <state width="2517" height="534" key="GridCell.Tab.1.bottom" timestamp="1590626296272">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.1.bottom/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296272" />
+    <state width="2517" height="534" key="GridCell.Tab.1.center" timestamp="1590626296271">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.1.center/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296271" />
+    <state width="2517" height="534" key="GridCell.Tab.1.left" timestamp="1590626296269">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.1.left/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296269" />
+    <state width="2517" height="534" key="GridCell.Tab.1.right" timestamp="1590626296272">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.1.right/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296272" />
+    <state width="2517" height="534" key="GridCell.Tab.2.bottom" timestamp="1590626296272">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.2.bottom/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296272" />
+    <state width="2517" height="534" key="GridCell.Tab.2.center" timestamp="1590626296272">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.2.center/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296272" />
+    <state width="2517" height="534" key="GridCell.Tab.2.left" timestamp="1590626296272">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.2.left/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296272" />
+    <state width="2517" height="534" key="GridCell.Tab.2.right" timestamp="1590626296272">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.2.right/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296272" />
+    <state width="2517" height="534" key="GridCell.Tab.3.bottom" timestamp="1590626296273">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.3.bottom/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296273" />
+    <state width="2517" height="534" key="GridCell.Tab.3.center" timestamp="1590626296273">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.3.center/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296273" />
+    <state width="2517" height="534" key="GridCell.Tab.3.left" timestamp="1590626296273">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.3.left/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296273" />
+    <state width="2517" height="534" key="GridCell.Tab.3.right" timestamp="1590626296273">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="2517" height="534" key="GridCell.Tab.3.right/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626296273" />
+    <state width="1288" height="728" key="XDebugger.FullValuePopup" timestamp="1590626331057">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state width="1288" height="728" key="XDebugger.FullValuePopup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626331057" />
+    <state x="923" y="453" width="714" height="534" key="find.popup" timestamp="1590626227362">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="923" y="453" width="714" height="534" key="find.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626227362" />
+    <state x="936" y="340" key="run.anything.popup" timestamp="1590513592167">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="936" y="340" key="run.anything.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590513592167" />
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1590511074597">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590511074597" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -249,7 +295,25 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Player.cs</url>
+          <line>102</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" initialLine="102">
+            <startOffsets>
+              <option value="2690" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2752" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="UNITY_DEBUG_RUN_CONFIGURATION">
+        <watch expression="_footstepAudio" language="C#" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

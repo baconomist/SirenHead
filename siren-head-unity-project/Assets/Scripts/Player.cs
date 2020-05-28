@@ -1,6 +1,7 @@
 using System;
 using DigitalRubyShared;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -59,6 +60,12 @@ public class Player : MonoBehaviour
         if (id == 0 && _textState == 0)
         {
             infoText.msgText = "Hold Down To Move And Orient The Camera";
+            infoText.Reset();
+            _textState++;
+        }
+        else if (id == 0 && _textState == 1)
+        {
+            infoText.msgText = "Remember To Get Back To The Car Once You've Found The Tires!";
             infoText.Reset();
             _textState++;
         }

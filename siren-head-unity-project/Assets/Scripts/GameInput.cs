@@ -8,13 +8,14 @@ public class GameInput : MonoBehaviour
 {
     public const float ActionTimeout = 0.250f;
     public bool mockMobile = true;
+    public float lookThreshold = 10f;
+    public float mobileLookSensitivity = 0.05f;
 
     public static event Action<LongPressGestureRecognizer> OnLongPressEvent;
     public static event Action<PanGestureRecognizer> OnPanEvent;
     public static event Action<TapGestureRecognizer> OnDoubleTapEvent;
 
     public Joystick moveJoystick;
-    public Joystick lookJoystick;
 
     private static GameInput _instance;
 
@@ -36,8 +37,13 @@ public class GameInput : MonoBehaviour
     private EndAction<LongPressGestureRecognizer> _longPressAction;
     private EndAction<TapGestureRecognizer> _tapAction;
 
+    private bool _runningLookTouch = false;
+    private Vector2 _touchDelta;
+
     private void Start()
     {
+        _instance = this;
+
         _fingersScript = GetComponent<FingersScript>();
         _fingersScript.TreatMousePointerAsFinger = mockMobile;
 
@@ -47,27 +53,24 @@ public class GameInput : MonoBehaviour
 
         LongPressGestureRecognizer longPressGestureRecognizer = new LongPressGestureRecognizer();
         longPressGestureRecognizer.MinimumDurationSeconds = 0.1f;
+        longPressGestureRecognizer.ThresholdUnits = 5.0f;
         longPressGestureRecognizer.StateUpdated += OnLongPress;
 
-        PanGestureRecognizer panGestureRecognizer = new PanGestureRecognizer();
-        panGestureRecognizer.StateUpdated += OnPan;
-        
         _fingersScript.AddGesture(longPressGestureRecognizer);
-        _fingersScript.AddGesture(panGestureRecognizer);
         _fingersScript.AddGesture(doubleTapGestureRecognizer);
 
         //        Cursor.lockState = CursorLockMode.Locked;
 
-        _panAction = new EndAction<PanGestureRecognizer>(panGestureRecognizer, -999999f);
         _longPressAction = new EndAction<LongPressGestureRecognizer>(longPressGestureRecognizer, -999999f);
         _tapAction = new EndAction<TapGestureRecognizer>(doubleTapGestureRecognizer, -999999f);
     }
 
     private void Update()
     {
-        _panAction.Update();
         _longPressAction.Update();
         _tapAction.Update();
+        _touchDelta = new Vector2(Mathf.Lerp(0, _touchDelta.x, 1 - Time.deltaTime * 10f),
+            Mathf.Lerp(0, _touchDelta.y, 1 - Time.deltaTime * 10f));
     }
 
     private void OnLongPress(GestureRecognizer gestureRecognizer)
@@ -75,13 +78,15 @@ public class GameInput : MonoBehaviour
         _longPressAction.Reset();
 
         OnLongPressEvent?.Invoke(gestureRecognizer as LongPressGestureRecognizer);
-    }
+        
+        if (gestureRecognizer.State == GestureRecognizerState.Began && gestureRecognizer.FocusX > Screen.width / 2f)
+            _runningLookTouch = true;
+        else if (gestureRecognizer.State == GestureRecognizerState.Ended)
+            _runningLookTouch = false;
 
-    private void OnPan(GestureRecognizer gestureRecognizer)
-    {
-        _panAction.Reset();
-
-        OnPanEvent?.Invoke(gestureRecognizer as PanGestureRecognizer);
+        if (gestureRecognizer.State == GestureRecognizerState.Executing && _runningLookTouch)
+            _touchDelta = new Vector2(Mathf.Lerp(_touchDelta.x, gestureRecognizer.DeltaX, Time.deltaTime * 100f),
+                Mathf.Lerp(_touchDelta.y, gestureRecognizer.DeltaY, Time.deltaTime * 100f));
     }
 
     private void OnDoubleTap(GestureRecognizer gestureRecognizer)
@@ -95,7 +100,7 @@ public class GameInput : MonoBehaviour
     {
         if ((Input.touchSupported || Instance.mockMobile))
         {
-            return Instance.lookJoystick.xAxis.value;
+            return Instance._touchDelta.x * _instance.mobileLookSensitivity;
         }
 
         return Input.GetAxis("Mouse X");
@@ -105,7 +110,7 @@ public class GameInput : MonoBehaviour
     {
         if ((Input.touchSupported || Instance.mockMobile))
         {
-            return -Instance.lookJoystick.yAxis.value;
+            return -Instance._touchDelta.y * _instance.mobileLookSensitivity;
         }
 
         return Input.GetAxis("Mouse Y");
@@ -113,12 +118,22 @@ public class GameInput : MonoBehaviour
 
     public static float GetForward()
     {
-        return Instance.moveJoystick.yAxis.value;
+        if ((Input.touchSupported || Instance.mockMobile))
+        {
+            return Instance.moveJoystick.yAxis.value;
+        }
+
+        return 0;
     }
 
     public static float GetRight()
     {
-        return Instance.moveJoystick.xAxis.value;
+        if ((Input.touchSupported || Instance.mockMobile))
+        {
+            return Instance.moveJoystick.xAxis.value;
+        }
+
+        return 0;
     }
 
     public static bool IsSprinting()
@@ -127,7 +142,7 @@ public class GameInput : MonoBehaviour
         return true;
     }
 
-    class EndAction <T>
+    class EndAction<T>
     {
         public float StartTime;
         public readonly T Data;

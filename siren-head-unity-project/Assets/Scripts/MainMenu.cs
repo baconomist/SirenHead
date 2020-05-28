@@ -1,12 +1,19 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    private void Start()
+    {
+        Ads.ShowBanner();
+    }
+
     public void PlayGame()
     {
-        SceneManager.LoadScene("");
+        SceneManager.LoadScene(1);
+        Ads.HideBanner();
     }
 }
