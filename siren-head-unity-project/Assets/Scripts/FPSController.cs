@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class FPSController : MonoBehaviour
 {
+    [HideInInspector]
+    public static FPSController instance;
+    
     public float sprintSpeed = 4f;
     public float movementSpeed = 2f;
     public float stepBounceMultiplier = 1f;
@@ -21,7 +24,12 @@ public class FPSController : MonoBehaviour
     private float _stepStartY;
     private float _prevDerivative = 0;
 
-    public static event Action OnFootstep;
+    public event Action OnFootstep;
+
+    private void Awake()
+    {
+        instance = this;
+    }
 
     void Start()
     {

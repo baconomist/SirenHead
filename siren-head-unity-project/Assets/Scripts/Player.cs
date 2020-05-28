@@ -39,10 +39,11 @@ public class Player : MonoBehaviour
         _voiceAudio.clip = initialAudio;
         _voiceAudio.Play();
 
-        FPSController.OnFootstep += OnFootstep;
+        FPSController.instance.OnFootstep += OnFootstep;
         InfoText.OnFinished += OnInfoTextFinished;
 
         GameInput.OnDoubleTapEvent += OnDoubleTap;
+        
     }
 
     private void OnDoubleTap(GestureRecognizer gestureRecognizer)
