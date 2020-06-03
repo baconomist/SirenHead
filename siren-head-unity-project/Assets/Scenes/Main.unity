@@ -4748,7 +4748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f06a5f36539648eeaeac2ac62449077d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mockMobile: 1
+  mobileControls: 0
   mobileLookSensitivity: 0.01
   moveJoystick: {fileID: 2062645146}
 --- !u!114 &207465886

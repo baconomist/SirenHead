@@ -92,7 +92,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableInEditor: 0
-  cullDistance: 200
+  cullDistance: 20
 --- !u!114 &552206529276471707
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -7,7 +7,7 @@ using UnityEngine;
 public class GameInput : MonoBehaviour
 {
     public const float ActionTimeout = 0.250f;
-    public bool mockMobile = true;
+    public bool mobileControls = true;
     public float mobileLookSensitivity = 0.05f;
 
     public static event Action<LongPressGestureRecognizer> OnLongPressEvent;
@@ -45,7 +45,7 @@ public class GameInput : MonoBehaviour
     private void Start()
     {
         _fingersScript = GetComponent<FingersScript>();
-        _fingersScript.TreatMousePointerAsFinger = mockMobile;
+        _fingersScript.TreatMousePointerAsFinger = mobileControls;
 
         TapGestureRecognizer doubleTapGestureRecognizer = new TapGestureRecognizer();
         doubleTapGestureRecognizer.NumberOfTapsRequired = 2;
@@ -98,7 +98,7 @@ public class GameInput : MonoBehaviour
 
     public static float GetCameraRotationX()
     {
-        if (Input.touchSupported || Instance.mockMobile)
+        if (Instance.mobileControls)
         {
             return Instance._touchDelta.x * _instance.mobileLookSensitivity;
         }
@@ -108,32 +108,32 @@ public class GameInput : MonoBehaviour
 
     public static float GetCameraRotationY()
     {
-        if (Input.touchSupported || Instance.mockMobile)
+        if (Instance.mobileControls)
         {
             return -Instance._touchDelta.y * _instance.mobileLookSensitivity;
         }
 
-        return Input.GetAxis("Mouse Y");
+        return -Input.GetAxis("Mouse Y");
     }
 
     public static float GetForward()
     {
-        if (Input.touchSupported || Instance.mockMobile)
+        if (Instance.mobileControls)
         {
             return Instance.moveJoystick.yAxis.value;
         }
 
-        return 0;
+        return Input.GetAxis("Vertical");
     }
 
     public static float GetRight()
     {
-        if (Input.touchSupported || Instance.mockMobile)
+        if (Instance.mobileControls)
         {
             return Instance.moveJoystick.xAxis.value;
         }
 
-        return 0;
+        return Input.GetAxis("Horizontal");;
     }
 
     public static bool IsSprinting()
