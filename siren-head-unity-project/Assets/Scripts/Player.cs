@@ -2,6 +2,7 @@ using System;
 using DigitalRubyShared;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class Player : MonoBehaviour
 
     public GameObject map;
 
+    public Text wheelText;
     public InfoText startInfoText;
     
     private AudioSource _voiceAudio;
@@ -91,6 +93,10 @@ public class Player : MonoBehaviour
             Destroy(other.gameObject);
             
             OnWheelFound(transform.position);
+            if(wheelsFound == 4)
+                wheelText.text = $"Wheels: {wheelsFound}/4; Get Back To The Car!";
+            else
+                wheelText.text = $"Wheels: {wheelsFound}/4";
         }
     }
 

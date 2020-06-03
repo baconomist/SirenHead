@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enableInEditor: 0
-  cullDistance: 100
+  cullDistance: 200
 --- !u!1001 &5710182732931474592
 PrefabInstance:
   m_ObjectHideFlags: 0

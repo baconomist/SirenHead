@@ -8,7 +8,6 @@ public class GameInput : MonoBehaviour
 {
     public const float ActionTimeout = 0.250f;
     public bool mockMobile = true;
-    public float lookThreshold = 10f;
     public float mobileLookSensitivity = 0.05f;
 
     public static event Action<LongPressGestureRecognizer> OnLongPressEvent;
@@ -24,8 +23,6 @@ public class GameInput : MonoBehaviour
         get
         {
             if (_instance is null)
-                _instance = FindObjectOfType<GameInput>();
-            if (_instance is null)
                 throw new Exception("Please add a GameInput instance to your scene.");
             return _instance;
         }
@@ -40,10 +37,13 @@ public class GameInput : MonoBehaviour
     private bool _runningLookTouch = false;
     private Vector2 _touchDelta;
 
-    private void Start()
+    private void Awake()
     {
         _instance = this;
+    }
 
+    private void Start()
+    {
         _fingersScript = GetComponent<FingersScript>();
         _fingersScript.TreatMousePointerAsFinger = mockMobile;
 
@@ -98,7 +98,7 @@ public class GameInput : MonoBehaviour
 
     public static float GetCameraRotationX()
     {
-        if ((Input.touchSupported || Instance.mockMobile))
+        if (Input.touchSupported || Instance.mockMobile)
         {
             return Instance._touchDelta.x * _instance.mobileLookSensitivity;
         }
@@ -108,7 +108,7 @@ public class GameInput : MonoBehaviour
 
     public static float GetCameraRotationY()
     {
-        if ((Input.touchSupported || Instance.mockMobile))
+        if (Input.touchSupported || Instance.mockMobile)
         {
             return -Instance._touchDelta.y * _instance.mobileLookSensitivity;
         }
@@ -118,7 +118,7 @@ public class GameInput : MonoBehaviour
 
     public static float GetForward()
     {
-        if ((Input.touchSupported || Instance.mockMobile))
+        if (Input.touchSupported || Instance.mockMobile)
         {
             return Instance.moveJoystick.yAxis.value;
         }
@@ -128,7 +128,7 @@ public class GameInput : MonoBehaviour
 
     public static float GetRight()
     {
-        if ((Input.touchSupported || Instance.mockMobile))
+        if (Input.touchSupported || Instance.mockMobile)
         {
             return Instance.moveJoystick.xAxis.value;
         }

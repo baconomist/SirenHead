@@ -1,4 +1,4 @@
-#define TEST_ADS
+// #define TEST_ADS
 
 using System;
 using GoogleMobileAds.Api;
