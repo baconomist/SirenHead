@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
+    public GameObject loadingText;
+    
     private void Start()
     {
         Ads.ShowBanner();
@@ -14,6 +16,6 @@ public class MainMenu : MonoBehaviour
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
-        Ads.HideBanner();
+        loadingText.SetActive(true);
     }
 }

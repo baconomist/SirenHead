@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
 
     public Text wheelText;
     public InfoText startInfoText;
-    
+
     private AudioSource _voiceAudio;
     private AudioSource _footstepAudio;
     private AudioSource _mapAudio;
@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private void Start()
     {
         _voiceAudio = GetComponentInChildren<AudioSource>();
-        
+
         _footstepAudio = gameObject.AddComponent<AudioSource>();
         _footstepAudio.volume = 0.3f;
 
@@ -43,19 +43,13 @@ public class Player : MonoBehaviour
 
         FPSController.instance.OnFootstep += OnFootstep;
         InfoText.OnFinished += OnInfoTextFinished;
-
-        GameInput.OnDoubleTapEvent += OnDoubleTap;
-        
     }
 
-    private void OnDoubleTap(GestureRecognizer gestureRecognizer)
+    public void OnMapBtnClicked()
     {
         // Show/hide map
-        if (gestureRecognizer.State == GestureRecognizerState.Ended)
-        {
-            map.SetActive(!map.activeSelf);
-            _mapAudio.Play();
-        }
+        map.SetActive(!map.activeSelf);
+        _mapAudio.Play();
     }
 
     private void OnInfoTextFinished(int id, InfoText infoText)
@@ -91,9 +85,9 @@ public class Player : MonoBehaviour
             wheelsFound++;
             PlayObjectFoundVoiceLine();
             Destroy(other.gameObject);
-            
+
             OnWheelFound(transform.position);
-            if(wheelsFound == 4)
+            if (wheelsFound == 4)
                 wheelText.text = $"Wheels: {wheelsFound}/4; Get Back To The Car!";
             else
                 wheelText.text = $"Wheels: {wheelsFound}/4";

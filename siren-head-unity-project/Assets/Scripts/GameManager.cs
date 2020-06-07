@@ -4,8 +4,15 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    private static GameManager _instance;
     public bool manualRestart = false;
-    
+    public GameObject pauseMenu;
+
+    private void Awake()
+    {
+        _instance = this;
+    }
+
     private void OnValidate()
     {
         if(manualRestart)
@@ -35,5 +42,29 @@ public class GameManager : MonoBehaviour
     public void ToMainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void OnPauseUnpause()
+    {
+        if (Time.timeScale < 1)
+        {
+            Time.timeScale = 1;
+            HidePauseMenu();
+        }
+        else
+        {
+            Time.timeScale = 0;
+            ShowPauseMenu();
+        }
+    }
+
+    public void ShowPauseMenu()
+    {
+        pauseMenu.SetActive(true);
+    }
+    
+    public void HidePauseMenu()
+    {
+        pauseMenu.SetActive(false);
     }
 }

@@ -2,6 +2,7 @@ using System;
 using DigitalRubyShared;
 using SimpleInputNamespace;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(FingersScript))]
 public class GameInput : MonoBehaviour
@@ -9,6 +10,7 @@ public class GameInput : MonoBehaviour
     public const float ActionTimeout = 0.250f;
     public bool mobileControls = true;
     public float mobileLookSensitivity = 0.05f;
+    public Slider slider;
 
     public static event Action<LongPressGestureRecognizer> OnLongPressEvent;
     public static event Action<PanGestureRecognizer> OnPanEvent;
@@ -36,6 +38,14 @@ public class GameInput : MonoBehaviour
 
     private bool _runningLookTouch = false;
     private Vector2 _touchDelta;
+
+    public void OnMobileSensitivityChanged()
+    {
+        float min = 0.01f;
+        float max = 0.1f;
+
+        mobileLookSensitivity = Mathf.Lerp(min, max, slider.value / 100f);
+    }
 
     private void Awake()
     {

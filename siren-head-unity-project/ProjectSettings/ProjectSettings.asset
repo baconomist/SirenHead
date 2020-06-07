@@ -167,7 +167,7 @@ PlayerSettings:
   applicationIdentifier:
     Android: com.fcfruit.sirenhead
   buildNumber: {}
-  AndroidBundleVersionCode: 10
+  AndroidBundleVersionCode: 12
   AndroidMinSdkVersion: 19
   AndroidTargetSdkVersion: 0
   AndroidPreferredInstallLocation: 1
