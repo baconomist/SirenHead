@@ -47,7 +47,7 @@ public class DistanceCullingObject : MonoBehaviour
         
         try
         {
-            bool shouldShow = Vector3.Distance(Camera.main.transform.position, transform.position) < cullDistance;
+            bool shouldShow = (Camera.main.transform.position - transform.position).sqrMagnitude < cullDistance*cullDistance;
             if (_showing != shouldShow)
             {
                 _showing = shouldShow;

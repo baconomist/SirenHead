@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
     {
         if (id == 0 && _textState == 0)
         {
-            infoText.msgText = "Hold Down To Move And Orient The Camera";
+            infoText.msgText = "Find The 4 Tires To Fix Your Car.";
             infoText.Reset();
             _textState++;
         }

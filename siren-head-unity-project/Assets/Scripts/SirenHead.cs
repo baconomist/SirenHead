@@ -191,7 +191,7 @@ public class SirenHead : MonoBehaviour
         // Slow down siren head to give player a chance to escape
         // Also, based on # of wheels player has collected, if they have a lot, they better a void sirenhead as much as possible
         // Otherwise they're dead for sure
-        movementSpeedMultiplier = _player.wheelsFound + 1;
+        movementSpeedMultiplier = _player.wheelsFound / 2.5f + 1;
         
         _navMeshAgent.SetDestination(_player.transform.position);
 

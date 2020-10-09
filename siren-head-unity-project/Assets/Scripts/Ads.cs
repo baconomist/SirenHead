@@ -13,11 +13,17 @@ public class Ads : MonoBehaviour
 
     public void Awake()
     {
+        _instance = this;
+        
         // Initialize the Google Mobile Ads SDK.
         MobileAds.Initialize(initStatus => { });
-        RequestInterstitial();
-        RequestBanner();
-        _instance = this;
+        LoadAds();
+    }
+
+    public static void LoadAds()
+    {
+        _instance.RequestInterstitial();
+        _instance.RequestBanner();
     }
 
     private void RequestInterstitial()
@@ -53,7 +59,7 @@ public class Ads : MonoBehaviour
 #endif
 
         // Create a 320x50 banner at the top of the screen.
-        _bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Bottom);
+        _bannerView = new BannerView(adUnitId, AdSize.Banner, AdPosition.Top);
         // Create an empty ad request.
         AdRequest request = new AdRequest.Builder().Build();
         // Load the banner with the request.

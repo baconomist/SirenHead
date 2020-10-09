@@ -12,10 +12,6 @@ public class GameInput : MonoBehaviour
     public float mobileLookSensitivity = 0.05f;
     public Slider slider;
 
-    public static event Action<LongPressGestureRecognizer> OnLongPressEvent;
-    public static event Action<PanGestureRecognizer> OnPanEvent;
-    public static event Action<TapGestureRecognizer> OnDoubleTapEvent;
-
     public Joystick moveJoystick;
 
     private static GameInput _instance;
@@ -34,7 +30,8 @@ public class GameInput : MonoBehaviour
 
     private EndAction<PanGestureRecognizer> _panAction;
     private EndAction<LongPressGestureRecognizer> _longPressAction;
-    private EndAction<TapGestureRecognizer> _tapAction;
+
+    private GestureTouch _lookTouch;
 
     private bool _runningLookTouch = false;
     private Vector2 _touchDelta;
@@ -57,53 +54,41 @@ public class GameInput : MonoBehaviour
         _fingersScript = GetComponent<FingersScript>();
         _fingersScript.TreatMousePointerAsFinger = mobileControls;
 
-        TapGestureRecognizer doubleTapGestureRecognizer = new TapGestureRecognizer();
-        doubleTapGestureRecognizer.NumberOfTapsRequired = 2;
-        doubleTapGestureRecognizer.StateUpdated += OnDoubleTap;
+        LongPressGestureRecognizer lookGestureRecognizer = new LongPressGestureRecognizer();
+        lookGestureRecognizer.MinimumDurationSeconds = 0.1f;
+        lookGestureRecognizer.ThresholdUnits = 5.0f;
+        lookGestureRecognizer.StateUpdated += OnLookLongPress;
 
-        LongPressGestureRecognizer longPressGestureRecognizer = new LongPressGestureRecognizer();
-        longPressGestureRecognizer.MinimumDurationSeconds = 0.1f;
-        longPressGestureRecognizer.ThresholdUnits = 5.0f;
-        longPressGestureRecognizer.StateUpdated += OnLongPress;
-
-        _fingersScript.AddGesture(longPressGestureRecognizer);
-        _fingersScript.AddGesture(doubleTapGestureRecognizer);
+        _fingersScript.AddGesture(lookGestureRecognizer);
 
         //        Cursor.lockState = CursorLockMode.Locked;
 
-        _longPressAction = new EndAction<LongPressGestureRecognizer>(longPressGestureRecognizer, -999999f);
-        _tapAction = new EndAction<TapGestureRecognizer>(doubleTapGestureRecognizer, -999999f);
+        _longPressAction = new EndAction<LongPressGestureRecognizer>(lookGestureRecognizer, -999999f);
     }
 
     private void Update()
     {
         _longPressAction.Update();
-        _tapAction.Update();
         _touchDelta = new Vector2(Mathf.Lerp(0, _touchDelta.x, 1 - Time.deltaTime * 10f),
             Mathf.Lerp(0, _touchDelta.y, 1 - Time.deltaTime * 10f));
     }
 
-    private void OnLongPress(GestureRecognizer gestureRecognizer)
+    private void OnLookLongPress(GestureRecognizer gestureRecognizer)
     {
         _longPressAction.Reset();
 
-        OnLongPressEvent?.Invoke(gestureRecognizer as LongPressGestureRecognizer);
-        
         if (gestureRecognizer.State == GestureRecognizerState.Began && gestureRecognizer.FocusX > Screen.width / 2f)
             _runningLookTouch = true;
         else if (gestureRecognizer.State == GestureRecognizerState.Ended)
             _runningLookTouch = false;
+        else if (gestureRecognizer.State == GestureRecognizerState.Began && gestureRecognizer.FocusX < Screen.width / 2f)
+        {
+            gestureRecognizer.Reset();
+        }
 
         if (gestureRecognizer.State == GestureRecognizerState.Executing && _runningLookTouch)
             _touchDelta = new Vector2(Mathf.Lerp(_touchDelta.x, gestureRecognizer.DeltaX, Time.deltaTime * 100f),
                 Mathf.Lerp(_touchDelta.y, gestureRecognizer.DeltaY, Time.deltaTime * 100f));
-    }
-
-    private void OnDoubleTap(GestureRecognizer gestureRecognizer)
-    {
-        _tapAction.Reset();
-
-        OnDoubleTapEvent?.Invoke(gestureRecognizer as TapGestureRecognizer);
     }
 
     public static float GetCameraRotationX()
@@ -143,7 +128,8 @@ public class GameInput : MonoBehaviour
             return Instance.moveJoystick.xAxis.value;
         }
 
-        return Input.GetAxis("Horizontal");;
+        return Input.GetAxis("Horizontal");
+        ;
     }
 
     public static bool IsSprinting()

@@ -21,17 +21,114 @@
   <component name="ChangeListManager">
     <list default="true" id="58a30f3d-0a91-41b2-a568-bb1a416104cc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.siren-head-unity-project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Layer_1.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Layer_1.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tree.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tree.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Tree2.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Tree2.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyAfterNoon_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyBrightMorning_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyCloudy_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyEarlyDusk_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyHole_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMidNight_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyMorning_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNight_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkyNoon_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Back.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Back.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Bottom.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Bottom.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Front.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Front.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Left.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Left.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Right.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Right.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Top.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Day-Night Skyboxes/Textures/SkySunSet_Top.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/bark.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bark.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/blackmetal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/blackmetal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/branch.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/branch.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/brickwall.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/brickwall.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/bush.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/bush.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/fencetext.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/fencetext.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/flesh.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/flesh.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/garagedoor.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/garagedoor.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/jerrycan.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/jerrycan.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/maptextfinal.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/maptextfinal.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/metal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/metal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/powerdrill.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/powerdrill.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/redmetal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/redmetal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/skin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/skin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/strap.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/strap.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/tankertext.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/tankertext.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/whitemetal.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/whitemetal.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/wood.jpg.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/wood.jpg.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-19.1.0.aar" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Android/com.google.android.gms.play-services-ads-lite-19.1.0.aar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/LightingData.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-0_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-0_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-0_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-0_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-1_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-1_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-1_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-1_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-2_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-2_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-2_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-2_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-3_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-3_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-3_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-3_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-4_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-4_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-4_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-4_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-5_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-5_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-5_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-5_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-6_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-6_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-6_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-6_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-7_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-7_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-7_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-7_comp_light.exr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-8_comp_dir.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-8_comp_dir.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-8_comp_light.exr" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Main/Lightmap-8_comp_light.exr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ads.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ads.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sirenhead.aab" beforeDir="false" afterPath="$PROJECT_DIR$/sirenhead.aab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +142,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Common/DummyClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameFinishedCollider.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/FogEffect/Standard Assets/Effects/ImageEffects/Scripts/PostEffectsBase.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FogEffect/Standard Assets/Effects/ImageEffects/Scripts/GlobalFog.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FogFollower.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,14 +160,19 @@
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ide.rider@1.1.4/Rider/Editor/RiderInitializer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Api/BannerView.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GlitchEffect/Kino/Glitch/AnalogGlitch.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Api/Core/AdSize.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputPinchGesture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FogEffect/Kino/Fog/Fog.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/Touchpad.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tree.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FPSDisplay.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameCamera.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/SplashScreen.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ads.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/SirenHeadAnimEventReceiver.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleMobileAds/Platforms/iOS/AdLoaderClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ItemSpawner.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Plugins/SimpleInput/Scripts/AxisInputs/AxisInputRotateGesture.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameInput.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/FingersLite/Script/FingersScript.cs" root0="FORCE_HIGHLIGHTING" />
@@ -100,15 +203,16 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DistanceCullingObject.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathCamera.cs" />
         <option value="$PROJECT_DIR$/Assets/FogEffect/Kino/Fog/Fog.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameFinishedCollider.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/FPSController.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Ads.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/SensitivityKnob.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenu.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GameInput.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Ads.cs" />
+        <option value="$PROJECT_DIR$/Assets/SplashScreen.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/SirenHead.cs" />
       </list>
     </option>
   </component>
@@ -181,6 +285,10 @@
       <workItem from="1590678524756" duration="1274000" />
       <workItem from="1591200241384" duration="218000" />
       <workItem from="1591204869808" duration="4262000" />
+      <workItem from="1592503744800" duration="617000" />
+      <workItem from="1592578872203" duration="6382000" />
+      <workItem from="1592677247554" duration="1823000" />
+      <workItem from="1594861099428" duration="1672000" />
     </task>
     <servers />
   </component>
@@ -273,18 +381,18 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1288" height="728" key="XDebugger.FullValuePopup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626331057" />
-    <state x="923" y="453" width="714" height="534" key="find.popup" timestamp="1590626227362">
+    <state x="923" y="453" width="714" height="534" key="find.popup" timestamp="1592596547693">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="923" y="453" width="714" height="534" key="find.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590626227362" />
+    <state x="923" y="453" width="714" height="534" key="find.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1592596547693" />
     <state x="936" y="340" key="run.anything.popup" timestamp="1590513592167">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="936" y="340" key="run.anything.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590513592167" />
-    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1590511074597">
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup" timestamp="1594861598002">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
-    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1590511074597" />
+    <state x="943" y="325" width="672" height="678" key="search.everywhere.popup/0.0.2560.1440/-1920.102.1920.1200@0.0.2560.1440" timestamp="1594861598002" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
