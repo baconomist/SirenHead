@@ -15,6 +15,11 @@ public class MainMenu : MonoBehaviour
 
     public void PlayGame()
     {
+        Ads.ShowInterstitial(shown =>
+        {
+        });
+        
+        // if ad failed or loaded, doesn't matter, load the next scene
         SceneManager.LoadScene(1);
         loadingText.SetActive(true);
     }

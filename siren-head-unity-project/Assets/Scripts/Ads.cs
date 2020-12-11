@@ -66,16 +66,16 @@ public class Ads : MonoBehaviour
         _bannerView.LoadAd(request);
     }
 
-    public static void ShowInterstitial(Action callback)
+    public static void ShowInterstitial(Action<bool> onAdClosed)
     {
-        _instance._interstitial.OnAdFailedToLoad += (sender, args) => callback();
+        _instance._interstitial.OnAdFailedToLoad += (sender, args) => onAdClosed(false);
         if (_instance._interstitial.IsLoaded())
         {
-            _instance._interstitial.OnAdClosed += (sender, args) => callback();
+            _instance._interstitial.OnAdClosed += (sender, args) => onAdClosed(true);
             _instance._interstitial.Show();
         }
-#if TEST_ADS
-        callback();
+#if TEST_ADS && UNITY_EDITOR
+        onAdClosed(true);
 #endif
     }
 

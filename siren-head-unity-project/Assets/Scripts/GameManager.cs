@@ -22,7 +22,7 @@ public class GameManager : MonoBehaviour
     public static void OnGameOver()
     {
         if (Ads.IsLoaded())
-            Ads.ShowInterstitial(Restart);
+            Ads.ShowInterstitial(b => Restart());
         else
             Restart();
     }
