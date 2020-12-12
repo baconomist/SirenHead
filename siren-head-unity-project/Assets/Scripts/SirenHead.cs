@@ -52,6 +52,10 @@ public class SirenHead : MonoBehaviour
     private float _idleLightTimer = 0;
     private bool _hasPlayer = false;
 
+    public Transform idleOutOfMapPosition;
+    private Vector3 _startPosition;
+    private bool _spawned = false;
+
     private void Start()
     {
         _light = GetComponentInChildren<Light>();
@@ -91,10 +95,23 @@ public class SirenHead : MonoBehaviour
         // Whenever the player has picked up a wheel, make sirenhead go to them ;P
         Player.OnWheelFound += delegate(Vector3 pos)
         {
+            if (!_spawned)
+            {
+                transform.position = _startPosition;
+                _spawned = true;
+                _navMeshAgent.enabled = true;
+            }
+            
             _navMeshAgent.ResetPath();
             _navMeshAgent.SetDestination(pos);
             _navDestSet = true;
         };
+
+
+
+        _navMeshAgent.enabled = false;
+        _startPosition = transform.position;
+        transform.position = idleOutOfMapPosition.position;
     }
 
     private void OnPlayerEaten()
@@ -114,7 +131,7 @@ public class SirenHead : MonoBehaviour
             _deathCameraAnalogGlitchEffect.verticalJump =
                 Mathf.Lerp(_deathCameraAnalogGlitchEffect.verticalJump, 1f, Time.deltaTime * 100f);
         }
-        
+
         // Enable sirenhead once player has found a wheel or sirenhead as been awakened
         if (_player.wheelsFound > 0 ||
             Vector3.Distance(_player.transform.position, transform.position) <= playerDetectionDistance ||
@@ -192,27 +209,27 @@ public class SirenHead : MonoBehaviour
         // Also, based on # of wheels player has collected, if they have a lot, they better a void sirenhead as much as possible
         // Otherwise they're dead for sure
         movementSpeedMultiplier = _player.wheelsFound / 2.5f + 1;
-        
+
         _navMeshAgent.SetDestination(_player.transform.position);
 
         if (!_noiseAudio.isPlaying)
             _noiseAudio.Play();
 
         _noiseAudio.volume = Mathf.Lerp(0, 0.15f, 1f - Mathf.InverseLerp(0, playerDetectionDistance,
-                                                      Vector3.Distance(transform.position,
-                                                          _player.transform.position)));
+            Vector3.Distance(transform.position,
+                _player.transform.position)));
 
         _playerAnalogGlitchEffect.scanLineJitter = Mathf.Lerp(0, 0.3f, 1f - Mathf.InverseLerp(0,
-                                                                           playerDetectionDistance,
-                                                                           Vector3.Distance(transform.position,
-                                                                               _player.transform.position)));
+            playerDetectionDistance,
+            Vector3.Distance(transform.position,
+                _player.transform.position)));
         _playerAnalogGlitchEffect.colorDrift = Mathf.Lerp(0, 1f, 1f - Mathf.InverseLerp(0, playerDetectionDistance,
-                                                                       Vector3.Distance(transform.position,
-                                                                           _player.transform.position)));
-        
+            Vector3.Distance(transform.position,
+                _player.transform.position)));
+
         _playerAnalogGlitchEffect.horizontalShake = Mathf.Lerp(0, 1f, 1f - Mathf.InverseLerp(0, playerDetectionDistance,
-                                                                       Vector3.Distance(transform.position,
-                                                                           _player.transform.position)));
+            Vector3.Distance(transform.position,
+                _player.transform.position)));
     }
 
     private void OnAmbientMovement()
@@ -258,7 +275,7 @@ public class SirenHead : MonoBehaviour
             _deathCameraAnalogGlitchEffect.scanLineJitter = _playerAnalogGlitchEffect.scanLineJitter;
             _deathCameraAnalogGlitchEffect.horizontalShake = _playerAnalogGlitchEffect.horizontalShake;
             _hasPlayer = true;
-            
+
             other.gameObject.SetActive(false);
             _noiseAudio.Stop();
             _animator.SetTrigger("Eat");
